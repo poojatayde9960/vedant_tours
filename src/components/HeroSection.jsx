@@ -1,0 +1,115 @@
+import React, { useState, useRef } from "react";
+import { MapPin, Calendar, Users, Search, ChevronDown } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
+
+const HeroSection = () => {
+  const [selectedDate, setSelectedDate] = useState("");
+  const navigate = useNavigate();
+
+  const hiddenDateRef = useRef(null);
+
+  return (
+    <section className="relative w-full flex items-center justify-center">
+      {/* Background Imageee */}
+      <img
+        src="/img/hero-img.png"
+        alt="hero"
+        className="absolute h-[800px] inset-0     object-cover"
+      />
+
+      <img
+        src="/public/img/hero-responsive.png"
+        className="absolute inset-0 w-full h-screen  block md:hidden"
+      />
+
+      {/* Overlay (optional for better text visibility) */}
+      <div className="absolute inset-0 "></div>
+
+      {/* Content */}
+      <div className="relative z-10 mt-[20vh] md:mt-[16vh] w-full px-4 sm:px-8 lg:px-16 text-white">
+        <div className="max-w-5xl mx-auto text-center">
+          {/* Heading */}
+          <h1 className="text-xl md:text-6xl leading-tight text-[#1E1E1E] font-goodly font-medium">
+            <span className="bg-gradient-to-r from-[#FFB724] to-[#F76200] bg-clip-text text-transparent">
+              Discover
+            </span>{" "}
+            Journeys That
+            <br /> Become
+            <span className="text-[#0061E0]"> Memories</span>
+          </h1>
+
+          {/* New Paragraph */}
+          <p className="mt-4 md:text-[15px] text-black max-w-2xl mx-auto font-poppins">
+            From dream vecations to perfectly planned tours explore the world
+            with seamless travel experinces, curated packages, and personalized
+            support every step of the way.
+          </p>
+
+          <div className="mt-8 flex justify-center gap-4">
+            <button className="bg-gradient-to-l from-[#F76200] to-[#FFB724]  text-white md:px-6 md:py-3 p-2 rounded-full transition font-poppins"
+              onClick={() => navigate("/tour-packages")}>
+              Explore Packages
+            </button>
+            <button className="border border-white text-white  bg-gradient-to-l from-[#00357A] to-[#0061E0]  p-2 md:px-10 md:py-3 rounded-full transition font-poppins">
+              Plan My Trip
+            </button>
+          </div>
+          {/* Existing Paragraph */}
+
+          {/* Search Bar */}
+          <div className=" md:ml-20 md:mt-8 p-4 bg-[#FFFFFF1A] backdrop-blur-xs flex  rounded-full border border-[#FFFFFF] md:max-w-4xl font-poppins">
+            <div className="bg-white rounded-full  flex  z-40 items-center md:gap-6 w-full  p-2">
+              <div className="flex items-center gap-2 px-4 py-2 w-full">
+                <MapPin size={18} className="text-blue-600" />
+                <select className="outline-none w-full text-[#0644A0]">
+                  <option className="">Location</option>
+                </select>
+              </div>
+
+              <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
+
+              <div
+                className="flex items-center gap-2 px-4 py-2 w-full relative cursor-pointer"
+                onClick={() => hiddenDateRef.current.showPicker()}
+              >
+                <Calendar size={18} className="text-[#0644A0]" />
+
+                {/* Visible input */}
+                <input
+                  type="text"
+                  placeholder="Date From"
+                  value={selectedDate}
+                  readOnly
+                  className="outline-none w-full text-[#0644A0] placeholder:text-[#0644A0] bg-transparent cursor-pointer"
+                />
+
+                {/* Hidden real date picker */}
+                <input
+                  ref={hiddenDateRef}
+                  type="date"
+                  className="absolute opacity-0 pointer-events-none"
+                  onChange={(e) => setSelectedDate(e.target.value)}
+                />
+              </div>
+
+              <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
+
+              <div className="flex items-center gap-2 px-4 py-2 w-full">
+                <Users size={18} className="text-blue-600" />
+                <select className="outline-none w-full text-[#0644A0]">
+                  <option>Travelers</option>
+                </select>
+              </div>
+            </div>
+            <button className="bg-gradient-to-l from-[#FFB724] to-[#F76200] text-white md:px-14 md:py-2 rounded-full flex items-center justify-center gap-2 transition whitespace-nowrap -ml-8 md:-ml-12 z-10">
+              <Search size={18} className="flex-shrink-0" />
+              <span className="text-center">Search Tour</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
