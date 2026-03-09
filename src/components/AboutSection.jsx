@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="w-full px-4 sm:px-6 md:px-10 relative overflow-hidden mt-40 md:mt-60 pt-32 md:pt-40">
+    <section className="w-full px-4 sm:px-6 md:px-10 relative overflow-hidden mt-40 md:mt-60 pt-0 md:pt-40">
       {/* Balloon - top */}
       <img
         src="/img/box-balloon.png"
