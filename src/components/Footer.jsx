@@ -88,9 +88,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Big Text */}
-        <div className="mt-12 text-left">
-          <h1 className="text-[28px] sm:text-6xl md:text-7xl lg:text-[113px] font-bold tracking-wide whitespace-nowrap">
+        <div className="mt-12 text-left overflow-hidden">
+          <h1 className="text-[28px] sm:text-6xl md:text-7xl lg:text-[113px] font-bold tracking-wide uppercase leading-tight">
             VEDANT HOLIDAY TOURS
           </h1>
         </div>

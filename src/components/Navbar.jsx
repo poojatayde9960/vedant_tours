@@ -32,7 +32,7 @@ const Navbar = () => {
               className="flex items-center gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
             >
               About
-              <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" />
+              {/* <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" /> */}
             </Link>
 
             <Link
@@ -40,7 +40,7 @@ const Navbar = () => {
               className="flex items-center gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
             >
               Categories
-              <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" />
+              {/* <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" /> */}
             </Link>
 
             <Link
@@ -48,7 +48,7 @@ const Navbar = () => {
               className="flex items-center gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
             >
               Tour Packages
-              <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" />
+              {/* <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" /> */}
             </Link>
           </div>
 
@@ -106,12 +106,12 @@ const Navbar = () => {
       )}
 
       {openLogin && (
-  <SignIn onClose={() => setOpenLogin(false)} />
-)}
+        <SignIn onClose={() => setOpenLogin(false)} />
+      )}
 
-     {openConnect && (
-  <ConnectWithUs onClose={() => setOpenConnect(false)} />
-)}
+      {openConnect && (
+        <ConnectWithUs onClose={() => setOpenConnect(false)} />
+      )}
     </nav>
   );
 };
