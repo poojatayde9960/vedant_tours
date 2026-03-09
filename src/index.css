@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "Goodly";
-  src: url("/img/goodly-font/goodly-Regular.otf") format("opentype");
+  src: url("/img/goodly-font/goodly-regular.otf") format("opentype");
   font-weight: 400;
 }
 
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "Goodly";
-  src: url("/img/goodly-font/goodly-extrabold.otf") format("opentype");
+  src: url("/img/goodly-font/goodly-semibold.otf") format("opentype");
   font-weight: 800;
 }
 

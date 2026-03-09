@@ -39,21 +39,21 @@ export default function TravelBanner() {
         {/* Statues / Illustrations from pack */}
         <div className="absolute md:block hidden left-[-5%] -bottom-[10%] w-[350px] h-[350px] pointer-events-none">
           <img
-            src="/public/img/statue.svg"
+            src="/img/statue.svg"
             className="w-full h-full object-contain"
           />
         </div>
 
         <div className="absolute md:block hidden left-[15%] -bottom-[20%] w-[350px] h-[350px] pointer-events-none">
           <img
-            src="/public/img/flying1.png"
+            src="/img/flying1.png"
             className="w-full h-full object-contain"
           />
         </div>
 
         <div className="absolute md:block hidden left-[72%] -bottom-[24%] w-[450px] h-[350px] pointer-events-none">
           <img
-            src="/public/img/flying2.png"
+            src="/img/flying2.png"
             className="w-full h-full object-contain"
           />
         </div>
@@ -62,7 +62,7 @@ export default function TravelBanner() {
       {/* Hot air balloon outside parent to prevent cut */}
       <div className="absolute md:block hidden right-80 -top-16 w-32 h-32 z-40">
         <img
-          src="/public/img/para-balloon.png"
+          src="/img/para-balloon.png"
           className="w-full h-full object-contain"
         />
       </div>

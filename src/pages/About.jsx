@@ -17,13 +17,13 @@ import {
   ChevronRight,
   Send,
 } from "lucide-react";
-import img4 from "/public/img/beach.jpg";
-import img3 from "/public/img/suitcase-img.png";
-import palmTree from "/public/img/tree-1.png";
-import img7 from "/public/img/img7.png";
-import img5 from "/public/img/img5.jpg";
-import img6 from "/public/img/img6.jpg";
-import balloon from "/public/img/balloon.svg";
+const img4 = "/img/beach.jpg";
+const img3 = "/img/suitcase-img.png";
+const palmTree = "/img/tree-1.png";
+const img7 = "/img/img7.png";
+const img5 = "/img/img5.jpg";
+const img6 = "/img/img6.jpg";
+const balloon = "/img/balloon.svg";
 import TravelBanner from "../components/TravelBanner";
 
 // Image paths from brain folder
@@ -276,7 +276,7 @@ const About = () => {
                 {/* OVERLAP IMAGE */}
                 <div className="absolute md:block hidden md:left-1/2 left-80 -translate-x-1/2 bottom-6 sm:-bottom-24 lg:-bottom-8 w-[120px] sm:w-[160px] lg:w-[160px] z-20">
                   <img
-                    src="/public/img/img-5.png"
+                    src="/img/img-5.png"
                     className=" h-auto object-contain filter drop-shadow-2xl"
                     alt="Travel Illustration"
                   />
@@ -327,7 +327,7 @@ const About = () => {
           {/* Right Image */}
           <div className="w-full md:block hidden flex justify-center lg:justify-end mt-10 lg:mt-0">
             <img
-              src="/public/img/img8.png"
+              src="/img/img8.png"
               className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-auto object-contain scale-100 sm:scale-105 lg:scale-125"
               alt="Woman Explorer"
             />
@@ -349,10 +349,10 @@ export default About;
 
 // import React from 'react'
 // import { useNavigate } from 'react-router-dom'
-// import img4 from '/public/img/beach.jpg'
-// import img3 from '/public/img/suitcase-img.png'
-// import palmTree from '/public/img/tree-1.png'
-// import balloon from '/public/img/balloon.png'
+// import img4 from '/img/beach.jpg'
+// import img3 from '/img/suitcase-img.png'
+// import palmTree from '/img/tree-1.png'
+// import balloon from '/img/balloon.png'
 
 // const About = () => {
 //   const navigate = useNavigate()
@@ -393,7 +393,7 @@ export default About;
 //         {/* Left Content */}
 //         <div className="relative z-10 flex flex-col items-center lg:items-start order-2 lg:order-1">
 //           <div className="relative w-full mb-10 sm:mb-16 lg:mb-0">
-//             <img src="/public/img/group5.png" className="w-full h-auto object-contain " alt="Travel Collage" />
+//             <img src="/img/group5.png" className="w-full h-auto object-contain " alt="Travel Collage" />
 //             {/* Happy Customers Badge */}
 //             <div className="absolute bottom-[-40px] sm:bottom-[-70px] lg:-bottom-[4%] left-[50%] lg:left-[69%] -translate-x-1/2 items-center bg-white/40 backdrop-blur-md p-3 sm:p-4 rounded-3xl lg:bg-transparent lg:p-0 shadow-xl lg:shadow-none flex flex-col">
 //               <div className="flex -space-x-2 gap-1 lg:gap-2 mb-2">
@@ -448,7 +448,7 @@ export default About;
 //               <p className="text-[18px] sm:text-[22px] lg:text-[26px] font-medium leading-tight">Tour <br /> Packages</p>
 //             </div>
 //             <div className="absolute left-1/2 -translate-x-1/2 -bottom-20 sm:-bottom-32 lg:-bottom-48 w-[160px] sm:w-[220px] z-20">
-//               <img src="/public/img/img9.png" className="w-full h-auto object-contain filter drop-shadow-2xl" alt="Illustration" />
+//               <img src="/img/img9.png" className="w-full h-auto object-contain filter drop-shadow-2xl" alt="Illustration" />
 //             </div>
 //           </div>
 
@@ -486,12 +486,12 @@ export default About;
 
 //           {/* Statue */}
 //           <div className="absolute -left-4 sm:-left-4 lg:left-[6%] -bottom-10 sm:-bottom-8 lg:-bottom-48 w-[120px] sm:w-[180px] lg:w-[199px] z-20 pointer-events-none">
-//             <img src="/public/img/statue.png" className="w-full h-auto object-contain filter drop-shadow-2xl" alt="Statue of Liberty" />
+//             <img src="/img/statue.png" className="w-full h-auto object-contain filter drop-shadow-2xl" alt="Statue of Liberty" />
 //           </div>
 
 //           {/* Balloon */}
 //           <div className="absolute right-4 lg:right-20 -top-8 sm:-top-10 lg:-top-16 w-16 sm:w-28 lg:w-36 z-20 pointer-events-none animate-bounce duration-[3000ms]">
-//             <img src="/public/img/balloon.png" className="w-full h-auto object-contain" alt="Hot Air Balloon" />
+//             <img src="/img/balloon.png" className="w-full h-auto object-contain" alt="Hot Air Balloon" />
 //           </div>
 //         </div>
 //       </section>

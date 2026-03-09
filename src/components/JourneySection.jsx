@@ -6,13 +6,13 @@ export default function JourneySection() {
     <section className="w-full mt-72 py-16 px-6 md:px-20 md:mt-56 h-screen relative overflow-hidden">
       {/* Decorative Helicopter */}
       <img
-        src="/public/img/Frame 11.png"
+        src="/img/Frame 11.png"
         alt="helicopter"
         className="hidden md:block absolute -top-2 right-60 w-24 lg:w-[1250px]"
       />
 
       <img
-        src="/public/img/helicopter.png"
+        src="/img/helicopter.png"
         className="md:h-[180px] h-40 absolute top-44 md:-top-10 right-1"
       />
 

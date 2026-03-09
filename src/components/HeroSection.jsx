@@ -18,7 +18,7 @@ const HeroSection = () => {
       />
 
       <img
-        src="/public/img/hero-responsive.png"
+        src="/img/hero-responsive.png"
         className="absolute inset-0 w-full h-screen  block md:hidden"
       />
 

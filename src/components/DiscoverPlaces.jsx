@@ -32,7 +32,7 @@ export default function DiscoverPlaces() {
           {/* Center Globe */}
           <div className="w-56 h-56 sm:w-72 md:block hidden sm:h-72 md:w-[960px] rounded-full flex items-start justify-center relative overflow-visible">
             <img
-              src="/public/img/Ellipse 38.png"
+              src="/img/Ellipse 38.png"
               alt="world map"
               className="w-3/4 -translate-y-1/4 md:mt-24 md:ml-32"
             />

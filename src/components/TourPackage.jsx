@@ -11,10 +11,10 @@ export default function TourPackage() {
         {/* Left Images */}
         <div className="relative flex flex-col  w-full items-center   lg:items-start">
           <div className="relative w-full max-w-md md:max-w-4xl">
-            <img src="/public/img/Group-68.png" alt="travel" />
+            <img src="/img/Group-68.png" alt="travel" />
           </div>
 
-          <img src="/public/img/suitcase-2.png" className="absolute  md:h-52 left-[1330px] -top-10 z-40"/>
+          <img src="/img/suitcase-2.png" className="absolute  md:h-52 left-[1330px] -top-10 z-40"/>
 
           {/* ✅ Counter moved here */}
           <div className="flex items-center gap-4 pt-6 md:ml-24">

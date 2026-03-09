@@ -125,7 +125,7 @@ export default function CategoryHeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/public/img/Rectangle 151.png"
+          src="/img/Rectangle 151.png"
           alt="travel background"
           className="w-full h-full object-cover"
         />
