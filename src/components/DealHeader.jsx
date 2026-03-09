@@ -9,7 +9,7 @@ const DealsHeader = () => {
     <section className="w-full py-14 px-4 relative overflow-hidden">
       {/* Left Balloon */}
       <img
-        src="public/img/balloon.svg"
+        src="/img/balloon.svg"
         alt="balloon"
         className="hidden md:block absolute left-40 top-40 -translate-y-1/2 w-14 lg:w-20"
       />

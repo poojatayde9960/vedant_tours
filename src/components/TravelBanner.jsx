@@ -39,7 +39,7 @@ export default function TravelBanner() {
         {/* Statues / Illustrations from pack */}
         <div className="absolute md:block hidden left-[-5%] -bottom-[10%] w-[350px] h-[350px] pointer-events-none">
           <img
-            src="/img/statue.svg"
+            src="/img/statue.png"
             className="w-full h-full object-contain"
           />
         </div>
