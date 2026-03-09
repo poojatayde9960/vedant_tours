@@ -31,7 +31,7 @@ export default function TravelBanner() {
           </div>
 
           <button className="bg-white font-poppins text-[#0061E0] px-12 py-4 rounded-full text-[17px] text-base hover:shadow-2xl hover:scale-105 transition-all"
-          onClick={() => navigate("/tour-packages")}>
+            onClick={() => navigate("/tour-packages")}>
             Explore Packages
           </button>
         </div>
@@ -39,7 +39,7 @@ export default function TravelBanner() {
         {/* Statues / Illustrations from pack */}
         <div className="absolute md:block hidden left-[-5%] -bottom-[10%] w-[350px] h-[350px] pointer-events-none">
           <img
-            src="/public/img/statue.png"
+            src="/public/img/statue.svg"
             className="w-full h-full object-contain"
           />
         </div>
