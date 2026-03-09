@@ -18,7 +18,7 @@ const HeroSection = () => {
       />
 
       <img
-        src="/img/hero-responsive.png"
+        src="/public/img/hero-responsive.png"
         className="absolute inset-0 w-full h-screen  block md:hidden"
       />
 
@@ -57,10 +57,9 @@ const HeroSection = () => {
           {/* Existing Paragraph */}
 
           {/* Search Bar */}
-          <div className="mt-8 md:ml-20 p-3 md:p-4 bg-[#FFFFFF1A] backdrop-blur-xs flex flex-col md:flex-row rounded-3xl md:rounded-full border border-[#FFFFFF] md:max-w-4xl font-poppins gap-3">
+          <div className="md:ml-20 md:mt-8 p-3 md:p-4 bg-[#FFFFFF1A] backdrop-blur-xs flex flex-col md:flex-row rounded-3xl md:rounded-full border border-[#FFFFFF] md:max-w-4xl font-poppins gap-3 md:gap-0">
 
-            {/* Inputs Container */}
-            <div className="bg-white rounded-2xl md:rounded-full flex flex-col md:flex-row items-center md:gap-6 w-full p-2">
+            <div className="bg-white rounded-2xl md:rounded-full flex flex-col md:flex-row z-40 items-center md:gap-6 w-full p-2">
 
               {/* Location */}
               <div className="flex items-center gap-2 px-4 py-3 md:py-2 w-full">
@@ -70,7 +69,7 @@ const HeroSection = () => {
                 </select>
               </div>
 
-              <div className="hidden md:block h-6 w-px bg-gray-200"></div>
+              <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
 
               {/* Date */}
               <div
@@ -95,7 +94,7 @@ const HeroSection = () => {
                 />
               </div>
 
-              <div className="hidden md:block h-6 w-px bg-gray-200"></div>
+              <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
 
               {/* Travelers */}
               <div className="flex items-center gap-2 px-4 py-3 md:py-2 w-full">
@@ -107,9 +106,9 @@ const HeroSection = () => {
             </div>
 
             {/* Search Button */}
-            <button className="bg-gradient-to-l from-[#FFB724] to-[#F76200] text-white w-full md:w-auto px-8 md:px-14 py-3 rounded-full flex items-center justify-center gap-2 transition whitespace-nowrap">
-              <Search size={18} />
-              <span>Search Tour</span>
+            <button className="bg-gradient-to-l from-[#FFB724] to-[#F76200] text-white w-full md:w-auto px-6 md:px-14 py-3 md:py-2 rounded-full flex items-center justify-center gap-2 transition whitespace-nowrap md:-ml-12 z-10">
+              <Search size={18} className="flex-shrink-0" />
+              <span className="text-center">Search Tour</span>
             </button>
 
           </div>
