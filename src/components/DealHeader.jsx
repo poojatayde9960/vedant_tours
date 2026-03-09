@@ -9,7 +9,7 @@ const DealsHeader = () => {
     <section className="w-full py-14 px-4 relative overflow-hidden">
       {/* Left Balloon */}
       <img
-        src="/public/img/box-balloon.png"
+        src="/public/img/balloon.svg"
         alt="balloon"
         className="hidden md:block absolute left-40 top-40 -translate-y-1/2 w-14 lg:w-20"
       />
@@ -36,11 +36,10 @@ const DealsHeader = () => {
               onClick={() => setActive(item)}
               className={`px-8 py-3 rounded-full text-sm font-medium transition
               
-              ${
-                active === item
+              ${active === item
                   ? "bg-[#0644A0] text-white shadow"
                   : "bg-[#C2EBFF7A] text-blue-700"
-              }
+                }
               
               `}
             >
