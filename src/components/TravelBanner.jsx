@@ -60,7 +60,7 @@ export default function TravelBanner() {
       </div>
 
       {/* Hot air balloon outside parent to prevent cut */}
-      <div className="absolute md:block hidden right-80 -top-16 w-32 h-32 z-40">
+      <div className="absolute md:block hidden right-80 -top-16 w-32 h-32 z-20">
         <img
           src="/img/para-balloon.png"
           className="w-full h-full object-contain"

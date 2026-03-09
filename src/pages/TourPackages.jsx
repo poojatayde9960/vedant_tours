@@ -163,11 +163,10 @@ const TourPackages = () => {
                 className="relative font-medium text-[17px] transition-all pb-2"
               >
                 <span
-                  className={`${
-                    activeTab === cat
-                      ? "text-[#0061E0]"
-                      : "text-gray-400 hover:text-gray-600"
-                  } transition-colors`}
+                  className={`${activeTab === cat
+                    ? "text-[#0061E0]"
+                    : "text-gray-400 hover:text-gray-600"
+                    } transition-colors`}
                 >
                   {cat}
                 </span>
@@ -430,16 +429,16 @@ px-12 xl:p-32 text-left shadow-2xl"
           </div>
 
           <div className="absolute top-72 -left-[4%] w-20 lg:w-40 xl:w-64 z-20">
-  <img src="/img/helicopter-2.png" className="w-full" alt="Helicopter" />
-</div>
+            <img src="/img/helicopter-2.png" className="w-full" alt="Helicopter" />
+          </div>
 
           {/* Camera */}
-          <div className="absolute bottom-6 xl:bottom-12 left-[22%] xl:left-[26%] w-28 xl:w-44 z-40 -rotate-10">
+          <div className="absolute bottom-6 xl:bottom-12 left-[22%] xl:left-[26%] w-28 xl:w-44 z-20 -rotate-10">
             <img src="/img/camera.png" className="w-full" alt="Camera" />
           </div>
 
           {/* Plane */}
-          <div className="absolute  -bottom-6 xl:-bottom-36 right-0 w-[75%] xl:w-[65%] z-40">
+          <div className="absolute  -bottom-6 xl:-bottom-36 right-0 w-[75%] xl:w-[65%] z-20">
             <img src="/img/Group 69.png" className="w-full" alt="Plane" />
           </div>
         </div>
