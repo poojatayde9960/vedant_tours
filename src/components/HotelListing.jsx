@@ -63,86 +63,86 @@ export default function HotelListing() {
   const navigate = useNavigate();
 
   return (
-    <div className=" min-h-screen font-poppins p-4 md:py-8 md:mt-24">
+    <div className=" min-h-screen font-poppins p-4 md:py-8 mt-[500px] md:mt-72">
       <div className="w-full mx-auto grid lg:grid-cols-4 gap-6">
         {/* Sidebar */}
-       <div className="space-y-4">
+        <div className="space-y-4">
 
-  {/* Budget */}
-  <div className="bg-white rounded-xl shadow border border-blue-500 overflow-hidden">
-    <h3 className="bg-[#D6E8FF] text-black  font-medium px-4 py-2">
-      Your Budget (Per Night)
-    </h3>
+          {/* Budget */}
+          <div className="bg-white rounded-xl shadow border border-blue-500 overflow-hidden">
+            <h3 className="bg-[#D6E8FF] text-black  font-medium px-4 py-2">
+              Your Budget (Per Night)
+            </h3>
 
-    <div className="p-4">
-      <input type="range" min="50" max="250" className="w-full accent-blue-500" />
+            <div className="p-4">
+              <input type="range" min="50" max="250" className="w-full accent-blue-500" />
 
-      <div className="flex justify-between text-sm mt-1">
-        <span>€ 50</span>
-        <span>€ 250</span>
-      </div>
-    </div>
-  </div>
-
-
-  {/* Star Rating */}
-  <div className="bg-white rounded-xl shadow border border-blue-500 overflow-hidden">
-    <h3 className="bg-[#D6E8FF] text-black font-medium px-4 py-2">
-      Star Rating
-    </h3>
-
-    <div className="p-4">
-      {["5 star", "3 star", "2 star", "Budget Hotel"].map((item) => (
-        <label key={item} className="flex items-center gap-2 text-sm mb-1">
-          <input type="checkbox" />
-          {item}
-        </label>
-      ))}
-    </div>
-  </div>
+              <div className="flex justify-between text-sm mt-1">
+                <span>€ 50</span>
+                <span>€ 250</span>
+              </div>
+            </div>
+          </div>
 
 
-  {/* Property Type */}
-  <div className="bg-white rounded-xl shadow border border-blue-500 overflow-hidden">
-    <h3 className="bg-[#D6E8FF] text-black font-medium px-4 py-2">
-      Property Type
-    </h3>
+          {/* Star Rating */}
+          <div className="bg-white rounded-xl shadow border border-blue-500 overflow-hidden">
+            <h3 className="bg-[#D6E8FF] text-black font-medium px-4 py-2">
+              Star Rating
+            </h3>
 
-    <div className="p-4">
-      {["Hotel", "Resort", "Villa", "Apartment", "Guest House"].map((item) => (
-        <label key={item} className="flex items-center gap-2 text-sm mb-1">
-          <input type="checkbox" />
-          {item}
-        </label>
-      ))}
-    </div>
-  </div>
+            <div className="p-4">
+              {["5 star", "3 star", "2 star", "Budget Hotel"].map((item) => (
+                <label key={item} className="flex items-center gap-2 text-sm mb-1">
+                  <input type="checkbox" />
+                  {item}
+                </label>
+              ))}
+            </div>
+          </div>
 
 
-  {/* Amenities */}
-  <div className="bg-white rounded-xl shadow border border-blue-500 overflow-hidden">
-    <h3 className="bg-[#D6E8FF] text-black font-medium px-4 py-2">
-      Amenities
-    </h3>
+          {/* Property Type */}
+          <div className="bg-white rounded-xl shadow border border-blue-500 overflow-hidden">
+            <h3 className="bg-[#D6E8FF] text-black font-medium px-4 py-2">
+              Property Type
+            </h3>
 
-    <div className="p-4">
-      {[
-        "Free Wifi",
-        "Swimming Pool",
-        "Breakfast Included",
-        "Free Cancellation",
-        "Air Conditioning",
-        "Parking available",
-      ].map((item) => (
-        <label key={item} className="flex items-center gap-2 text-sm mb-1">
-          <input type="checkbox" />
-          {item}
-        </label>
-      ))}
-    </div>
-  </div>
+            <div className="p-4">
+              {["Hotel", "Resort", "Villa", "Apartment", "Guest House"].map((item) => (
+                <label key={item} className="flex items-center gap-2 text-sm mb-1">
+                  <input type="checkbox" />
+                  {item}
+                </label>
+              ))}
+            </div>
+          </div>
 
-</div>
+
+          {/* Amenities */}
+          <div className="bg-white rounded-xl shadow border border-blue-500 overflow-hidden">
+            <h3 className="bg-[#D6E8FF] text-black font-medium px-4 py-2">
+              Amenities
+            </h3>
+
+            <div className="p-4">
+              {[
+                "Free Wifi",
+                "Swimming Pool",
+                "Breakfast Included",
+                "Free Cancellation",
+                "Air Conditioning",
+                "Parking available",
+              ].map((item) => (
+                <label key={item} className="flex items-center gap-2 text-sm mb-1">
+                  <input type="checkbox" />
+                  {item}
+                </label>
+              ))}
+            </div>
+          </div>
+
+        </div>
 
         {/* Hotel Grid */}
         <div className="lg:col-span-3">

@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 export default function JourneySection() {
   return (
-    <section className="w-full mt-72 py-16 px-6 md:px-20 md:mt-56 h-screen relative overflow-hidden">
+    // <section className="w-full mt-52 py-16 pb-32 md:pb-16 px-6 md:px-20 md:mt-20 min-h-screen relative overflow-hidden">
+    <section className="w-full mt-52 py-16 px-6 pb-32 md:-mb-40 md:px-20 md:mt-10 h-[80%] relative overflow-hidden">
       {/* Decorative Helicopter */}
       <img
         src="/img/Frame 11.png"
@@ -13,7 +14,8 @@ export default function JourneySection() {
 
       <img
         src="/img/helicopter.png"
-        className="md:h-[180px] h-40 absolute top-44 md:-top-10 right-1"
+        className="hidden md:block md:h-[180px] h-40 absolute top-44 md:-top-10 right-1"
+        alt="helicopter"
       />
 
       <div className="max-w-7xl mx-auto">
@@ -48,7 +50,7 @@ export default function JourneySection() {
           </svg> */}
 
           {/* Steps */}
-          <div className="relative font-poppins h-[500px]">
+          <div className="relative font-poppins h-[500px] mt-10 md:mt-0">
             <Step
               number="1"
               title="Travel & Enjoy"
@@ -80,16 +82,16 @@ export default function JourneySection() {
 /* Step Component */
 function Step({ number, title, description, position }) {
   return (
-    <div className={`absolute ${position} flex items-start md:p-0    md:mt-0 mt-40 md:gap-4 `}>
+    <div className={`absolute ${position} flex items-start md:p-0 md:mt-0 mt-20 md:gap-4`}>
       {/* Number */}
-      <span className="absolute md:-left-8 text-7xl font-bold text-blue-100 font-poppins">
+      <span className="absolute md:-left-12 md:mt-12 text-[550%]  font-medium text-blue-100 font-poppins">
         {number}
       </span>
 
       {/* Text */}
-      <div className="md:ml-6 ml-14">
-        <h3 className="text-[20px] font-semibold text-gray-800 font-poppins">{title}</h3>
-        <p className="mt-2 text-gray-600 text-[17px] max-w-xs font-poppins">{description}</p>
+      <div className="md:ml-6 md:mt-8 ml-14">
+        <h3 className="text-[20px] font-medium text-gray-800 font-poppins">{title}</h3>
+        <p className="mt-2 text-[#00000094] text-[17px] font-normal max-w-xs font-poppins">{description}</p>
       </div>
     </div>
   );

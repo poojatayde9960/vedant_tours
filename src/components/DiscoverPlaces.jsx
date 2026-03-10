@@ -13,7 +13,7 @@ export default function DiscoverPlaces() {
   ];
 
   return (
-    <section className="w-full h-screen bg-[#C2EBFF7A] md:py-10 md:mt-0 px-6 lg:px-20 overflow-hidden md:mb-10">
+    <section className="w-full min-h-screen bg-[#C2EBFF7A] md:py-10 pb-16 md:pb-10 md:mt-0 px-6 lg:px-20 overflow-hidden md:mb-10">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-2xl md:mt-0 mt-10 font-goodly font-medium sm:text-3xl md:text-[36px] text-gray-800">

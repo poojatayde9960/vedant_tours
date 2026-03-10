@@ -6,69 +6,54 @@ import { IoIosArrowDown } from "react-icons/io";
 const FlightListing = () => {
   const navigate = useNavigate();
   return (
-    <div className=" min-h-screen mt-72 p-4 md:p-8 md:mt-36 font-poppins">
-      {/* Header */}
-      {/* <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
-        <h1 className="text-xl md:text-2xl font-semibold">
-          Flight From New York To Paris
-        </h1>
+    <div className="mt-72 p-4 md:p-8 md:mt-36 font-poppins min-h-screen relative">
+      {/* Sticky Header Container - Pins below Navbar (64px mobile, 80px desktop) */}
+      <div className="sticky top-[64px] md:top-[80px] bg-white z-30 -mx-4 md:-mx-8 px-4 md:px-8 py-4 border-b shadow-sm transition-all duration-300">
+        <div className="flex items-center justify-between text-center">
+          <p className="font-poppins font-medium text-[17px] hidden md:block">Filter By</p>
 
-        <div className="flex bg-white rounded-lg shadow p-1">
-          <button className="px-4 py-2 text-sm bg-gray-200 rounded-md">
-            Cheapest
-          </button>
-          <button className="px-4 py-2 text-sm">Non Stop First</button>
-          <button className="px-4 py-2 text-sm">Others</button>
-        </div>
-      </div> */}
+          <div className="flex flex-col md:flex-row items-center w-full md:w-auto md:justify-between flex-1 md:ml-12 gap-4">
+            <h1 className="text-xl md:text-2xl font-poppins font-medium whitespace-nowrap">
+              Flight From New York To Paris
+            </h1>
 
-      <div className="flex items-center justify-between text-center ">
-        <p className="font-poppins font-medium text-[17px] ">Filter By</p>
-
-        <div className="flex flex-col md:flex-row  items-center mb-3 md:gap-[470px] font-poppins">
-          <h1 className="text-xl md:text-2xl md:mr-0 mr-2 font-semibold md:mb-0 mb-2">
-            Flight From New York To Paris
-          </h1>
-
-          <div className="flex bg-white rounded-lg border p-1 text-[14px]">
-            <button className="md:px-4 md:py-2 p-2 text-sm border-r ">
-              Cheapest
-            </button>
-            <button className="md:px-4 md:py-2 p-2 text-sm border-r ">
-              Non Stop First
-            </button>
-            <button className="md:px-4 md:py-2 p-2 text-sm ">Others</button>
+            <div className="flex bg-white rounded-lg border p-1 text-[14px]">
+              <button className="md:px-4 md:py-2 px-2 py-1 text-sm border-r hover:bg-gray-100 transition">
+                Cheapest
+              </button>
+              <button className="md:px-4 md:py-2 px-2 py-1 text-sm border-r hover:bg-gray-100 transition">
+                Non Stop First
+              </button>
+              <button className="md:px-4 md:py-2 px-2 py-1 text-sm hover:bg-gray-100 transition">Others</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6">
-        {/* LEFT FILTER PANEL */}
-        <div className="w-full lg:w-1/5 space-y-4">
+      <div className="flex flex-col lg:flex-row gap-6 mt-6">
+        {/* LEFT FILTER PANEL - Sticky Sidebar */}
+        <div className="w-full lg:w-1/5 space-y-4 lg:sticky lg:top-[160px] lg:self-start lg:max-h-[calc(100vh-180px)] overflow-y-auto no-scrollbar pb-10">
+          <p className="font-poppins font-medium text-[17px] md:hidden mb-2">Filter By</p>
           {/* Budget */}
-          <div className="bg-white rounded-xl border border-[#0644A02B] p-0">
+          <div className="bg-white rounded-xl border border-[#0644A02B] p-0 shadow-sm">
             <div className="rounded-t-xl bg-[#D6E8FF] p-3">
-              <h2 className="font-medium">Your Budget (Per Night)</h2>
+              <h2 className="font-medium text-sm">Your Budget (Per Night)</h2>
             </div>
-
-            <p className="text-[12px] p-3">Set your Own Budget</p>
-
-            <div className="px-2">
+            <div className="p-4">
+              <p className="text-[12px] mb-2">Set your Own Budget</p>
               <input type="range" className="w-full accent-[#0644A0]" />
-            </div>
-            <div className="flex justify-between text-sm px-3 text-gray-500 mt-2">
-              <span>€ 50</span>
-              <span>€ 250</span>
+              <div className="flex justify-between text-xs text-gray-500 mt-2">
+                <span>€ 50</span>
+                <span>€ 250</span>
+              </div>
             </div>
           </div>
 
-          {/* Popular Airlines */}
           <FilterBox
             title="Popular Airlines"
             options={["Indigo", "United Airlines", "My Emirates"]}
           />
 
-          {/* Popular Filter */}
           <FilterBox
             title="Popular Filter"
             options={[
@@ -78,13 +63,11 @@ const FlightListing = () => {
             ]}
           />
 
-          {/* Flight Stops */}
           <FilterBox
             title="Flight Stops"
             options={["0 Stop", "1 Stop", "2 Stop", "3+ Stop"]}
           />
 
-          {/* Departure Time */}
           <FilterBox
             title="Departure Time"
             options={[
@@ -95,7 +78,6 @@ const FlightListing = () => {
             ]}
           />
 
-          {/* Arrival Time */}
           <FilterBox
             title="Arrival Time"
             options={[
@@ -109,7 +91,7 @@ const FlightListing = () => {
 
         {/* RIGHT FLIGHT LIST */}
         <div className="w-full lg:w-3/4 space-y-6">
-          {[1, 2, 3, 4].map((item) => (
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
             <FlightCard key={item} navigate={navigate} />
           ))}
         </div>
@@ -145,7 +127,7 @@ const FilterBox = ({ title, options }) => {
 const FlightCard = ({ navigate }) => {
   return (
     <div
-      
+
       className="bg-white rounded-xl border border-[#0061E030] p-4 space-y-4 cursor-pointer hover:shadow-lg transition duration-300"
     >
       {/* Top Section */}
@@ -174,7 +156,7 @@ const FlightCard = ({ navigate }) => {
         </div>
 
         <button className="mt-2 bg-[#00357A] text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700"
-        onClick={() => navigate("/flight-details")}>
+          onClick={() => navigate("/flight-details")}>
           Go Ahead
         </button>
       </div>

@@ -1,18 +1,26 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const services = [
-  { title: "Flight Booking", icon: "/img/img-1.png", bg: "#C2EBFF" },
-  { title: "Hotel Booking", icon: "/img/img-2.png", bg: "#FC8605" },
-  { title: "Bus Booking", icon: "/img/img-3.png", bg: "#B9FFBB" },
-  { title: "Stays", icon: "/img/img-4.png", bg: "#FEB1B0" },
-  { title: "Holiday Plans", icon: "/img/img-5.png", bg: "#D6E8FF" },
-  { title: "Car Booking", icon: "/img/img-6.png", bg: "#EF5BA7" },
-  { title: "Cruise Booking", icon: "/img/img-7.png", bg: "#FEB1B0" },
-  { title: "Train Booking", icon: "/img/img-8.png", bg: "#D0FFBC" },
-  { title: "Travel Insurance", icon: "/img/img-9.png", bg: "#C1B0FF" },
+  { title: "Flight Booking", icon: "/img/img-1.png", bg: "#C2EBFF", value: "flight" },
+  { title: "Hotel Booking", icon: "/img/img-2.png", bg: "#FC8605", value: "hotel" },
+  { title: "Bus Booking", icon: "/img/img-3.png", bg: "#B9FFBB", value: "bus" },
+  { title: "Stays", icon: "/img/img-4.png", bg: "#FEB1B0", value: "hotel" },
+  { title: "Holiday Plans", icon: "/img/img-5.png", bg: "#D6E8FF", value: "hotel" },
+  { title: "Car Booking", icon: "/img/img-6.png", bg: "#EF5BA7", value: "car" },
+  { title: "Cruise Booking", icon: "/img/img-7.png", bg: "#FEB1B0", value: "hotel" },
+  { title: "Train Booking", icon: "/img/img-8.png", bg: "#D0FFBC", value: "flight" },
+  { title: "Travel Insurance", icon: "/img/img-9.png", bg: "#C1B0FF", value: "flight" },
 ];
 
 const ServicesSection = () => {
+  const navigate = useNavigate();
+
+  const handleServiceClick = (value) => {
+    if (value) {
+      navigate("/categories", { state: { activeService: value } });
+    }
+  };
+
   return (
     <section className="relative w-full py-16 md:py-20 px-4 sm:px-6 lg:px-0 overflow-hidden min-h-[650px] md:min-h-[720px] lg:min-h-[650px] flex flex-col">
 
@@ -30,8 +38,8 @@ const ServicesSection = () => {
 
         {/* Heading */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 mb-12 md:mb-16 text-center md:text-left">
-          
-          <h2 className="text-2xl sm:text-[32px] lg:text-[36px] text-gray-800 leading-snug font-goodly font-medium">
+
+          <h2 className="text-[22px] sm:text-[32px] lg:text-[36px]  text-gray-800 leading-snug font-goodly font-medium">
             Everything <span className="text-orange-500">You Need</span> For A
             <br />
             Perfect <span className="text-blue-600">Trip</span>
@@ -51,13 +59,14 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col items-center space-y-3 group"
+              className="flex flex-col items-center space-y-3 group cursor-pointer"
+              onClick={() => handleServiceClick(service.value)}
             >
 
               <div className="w-20 h-20 md:w-22 md:h-22 lg:w-24 lg:h-24 rounded-full p-[1px] bg-gradient-to-r from-[#FFB724] via-[#F76200] to-[#0061E0] group-hover:shadow-xl transition duration-300">
 
                 <div
-                  className="w-full h-full rounded-full flex items-center justify-center"
+                  className="w-full h-full rounded-full flex items-center justify-center border-2 border-white"
                   style={{ backgroundColor: service.bg }}
                 >
                   <img

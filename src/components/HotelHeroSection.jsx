@@ -31,7 +31,7 @@ export default function HotelHeroSection() {
 
       {/* Content Wrapper */}
       {/* Content Wrapper */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-10 pb-40">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-10 pb-64 md:pb-80">
         <h1 className="text-white font-goodly font-medium text-3xl sm:text-4xl md:text-5xl  max-w-3xl">
           Find You Next Place To Visit
         </h1>
@@ -44,12 +44,12 @@ export default function HotelHeroSection() {
       </div>
 
       {/* Search Card */}
-      <div className="absolute z-20 font-poppins top-32 inset-x-0 md:top-[190px] md:flex  justify-center px-4 md:px-0">
+      <div className="absolute z-20 font-poppins top-48 inset-x-0 md:top-[280px] md:flex  justify-center px-4 md:px-0">
         {/* <div className="bg-white md:max-w-6xl rounded-2xl shadow-xl p-6 w-full"> */}
 
         {/* Simple Form Fields in Flex */}
         <div className="w-full flex justify-center px-4">
-          <div className="w-full max-w-6xl bg-white rounded-[24px] border border-[#A9C1E6] p-6 shadow-sm">
+          <div className="w-full max-w-6xl bg-white rounded-[24px] border border-[#A9C1E6] p-8 pb-16 shadow-sm">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
               {/* Location */}
               <div className="flex items-center gap-3 bg-white rounded-xl px-2 py-2 border">

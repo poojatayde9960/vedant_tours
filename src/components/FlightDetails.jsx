@@ -16,7 +16,7 @@ const FlightDetails = () => {
 
         {/* Blue Header OVER Image */}
         <div className="absolute inset-0  flex ">
-          <div className="bg-gradient-to-r  text-white py-10 px-4 text-center w-full">
+          <div className="bg-gradient-to-r  text-white py-10 mt-2 text-center w-full">
             <h1 className="text-2xl md:text-[36px] font-goodly font-medium ">
               Flight Details
             </h1>
@@ -58,10 +58,11 @@ const FlightDetails = () => {
               <div className="flex flex-col items-center text-center">
                 <p className="text-gray-500 text-sm">Duration 2h 30min</p>
                 <div className="flex items-center gap-2 text-blue-600">
-                  <FaPlane />
-                  <span className="text-gray-400">--------</span>
+                  <span className="text-gray-400 font-light">&lt;-----</span>
+                  <FaPlane className="rotate-90 md:rotate-0" />
+                  <span className="text-gray-400 font-light">-----&gt;</span>
                 </div>
-                <p className="text-green-600 text-sm">Direct</p>
+                <p className="text-black text-sm font-medium">Direct</p>
               </div>
 
               {/* Arrival */}

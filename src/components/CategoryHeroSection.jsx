@@ -7,7 +7,7 @@ import {
   Users,
   BedDouble,
 } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FaPlaneArrival, FaPlaneDeparture } from "react-icons/fa";
 import { LuCalendarDays } from "react-icons/lu";
 
@@ -15,6 +15,13 @@ export default function CategoryHeroSection() {
   const [tripType, setTripType] = useState("oneway");
   const [activeService, setActiveService] = useState("flight");
   const navigate = useNavigate();
+  const location = useLocation();
+
+  React.useEffect(() => {
+    if (location.state?.activeService) {
+      setActiveService(location.state.activeService);
+    }
+  }, [location.state]);
 
   const options = [
     { label: "Flight", icon: <FaPlaneDeparture />, value: "flight" },
@@ -36,7 +43,7 @@ export default function CategoryHeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-10 pb-40 md:pt-20 md:pb-56">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-10 pb-96 md:pt-20 md:pb-96">
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium max-w-3xl">
           Complete Travel & Lifestyle Solutions
         </h1>
@@ -48,28 +55,29 @@ export default function CategoryHeroSection() {
         </p>
 
         {/* Tabs */}
-        <div className="mt-6 flex flex-wrap md:mt-10 md:gap-4 justify-center bg-white p-3 rounded-3xl">
+        <div className="mt-6 flex md:flex-wrap md:mt-10 gap-2 md:gap-4 justify-start md:justify-center bg-white p-2 md:p-3 rounded-full overflow-x-auto no-scrollbar">
+
           {options.map((option) => (
             <button
               key={option.label}
               onClick={() => setActiveService(option.value)}
-              className={`flex items-center gap-2 px-3 py-2 rounded-full font-medium transition
-              ${
-                activeService === option.value
-                  ? "bg-blue-600 text-white"
+              className={`flex items-center gap-1 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full font-medium text-xs md:text-sm whitespace-nowrap transition
+      ${activeService === option.value
+                  ? "bg-[#0644A0] text-white"
                   : "bg-white text-blue-600 hover:bg-blue-600 hover:text-white"
-              }`}
+                }`}
             >
-              <span className="text-sm">{option.icon}</span>
+              <span className="text-xs md:text-sm">{option.icon}</span>
               {option.label}
             </button>
           ))}
+
         </div>
       </div>
 
       {/* Search Card Wrapper */}
-      <div className="absolute z-20 md:mt-0 mt-28 inset-x-0 px-4 sm:px-6 md:px-0 md:flex justify-center top-[45%] md:top-[480px]">
-        
+      <div className="absolute z-20 md:mt-24 md:mb-9 mb-9 mt-28 inset-x-0 px-4 sm:px-6 md:px-0 md:flex justify-center top-[45%] md:top-[480px]">
+
         {/* FLIGHT SEARCH */}
         {activeService === "flight" && (
           <div className="bg-white w-full max-w-lg sm:max-w-2xl md:max-w-6xl rounded-2xl shadow-xl md:p-6 p-3 mx-auto">
@@ -80,23 +88,21 @@ export default function CategoryHeroSection() {
                 <button
                   key={type}
                   onClick={() => setTripType(type)}
-                  className={`flex items-center gap-2 text-sm font-medium ${
-                    tripType === type ? "text-blue-600" : "text-black"
-                  }`}
+                  className={`flex items-center gap-2 text-sm font-medium ${tripType === type ? "text-blue-600" : "text-black"
+                    }`}
                 >
                   <span
-                    className={`w-5 h-5 rounded-full border ${
-                      tripType === type
-                        ? "bg-blue-600 border-blue-600"
-                        : "border-gray-400"
-                    }`}
+                    className={`w-5 h-5 rounded-full border ${tripType === type
+                      ? "bg-blue-600 border-blue-600"
+                      : "border-gray-400"
+                      }`}
                   ></span>
 
                   {type === "oneway"
                     ? "One Way"
                     : type === "round"
-                    ? "Round"
-                    : "Multi Way"}
+                      ? "Round"
+                      : "Multi Way"}
                 </button>
               ))}
             </div>
@@ -180,7 +186,7 @@ export default function CategoryHeroSection() {
         {/* HOTEL SEARCH */}
         {activeService === "hotel" && (
           <div className="w-full flex justify-center px-4">
-            <div className="w-full max-w-6xl bg-white rounded-[24px] border border-[#A9C1E6] p-6 shadow-sm">
+            <div className="w-full max-w-6xl bg-white rounded-[24px] h-[130%] border border-[#A9C1E6] p-6 shadow-sm">
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
 
@@ -189,7 +195,7 @@ export default function CategoryHeroSection() {
                   <div className="bg-[#D6E8FF] p-2 rounded-lg">
                     <MapPin className="text-blue-600" size={20} />
                   </div>
-                  
+
                   <div>
                     <p className="text-sm font-semibold">Location</p>
                     <p className="text-xs text-gray-500 truncate">
@@ -201,7 +207,7 @@ export default function CategoryHeroSection() {
                 {/* Check In */}
                 <div className="flex items-center gap-3 bg-white rounded-xl px-2 py-2 border">
                   <div className="bg-[#D6E8FF] p-2 rounded-lg">
-                  <CalendarDays className="text-blue-600" size={20} />
+                    <CalendarDays className="text-blue-600" size={20} />
                   </div>
                   <div>
                     <p className="text-sm font-semibold">Check In</p>
@@ -214,7 +220,7 @@ export default function CategoryHeroSection() {
                 {/* Check Out */}
                 <div className="flex items-center gap-3 bg-white rounded-xl px-2 py-2 border">
                   <div className="bg-[#D6E8FF] p-2 rounded-lg">
-                  <CalendarDays className="text-blue-600" size={20} />
+                    <CalendarDays className="text-blue-600" size={20} />
                   </div>
                   <div>
                     <p className="text-sm font-semibold">Check Out</p>
@@ -227,7 +233,7 @@ export default function CategoryHeroSection() {
                 {/* Adults */}
                 <div className="flex items-center gap-3 bg-white rounded-xl px-2 py-2 border">
                   <div className="bg-[#D6E8FF] p-2 rounded-lg">
-                  <Users className="text-blue-600" size={20} />
+                    <Users className="text-blue-600" size={20} />
                   </div>
                   <div>
                     <p className="text-sm font-semibold">Adults</p>
@@ -238,7 +244,7 @@ export default function CategoryHeroSection() {
                 {/* Rooms */}
                 <div className="flex items-center gap-3 bg-white rounded-xl px-2 py-2 border">
                   <div className="bg-[#D6E8FF] p-2 rounded-lg">
-                  <BedDouble className="text-blue-600" size={20} />
+                    <BedDouble className="text-blue-600" size={20} />
                   </div>
                   <div>
                     <p className="text-sm font-semibold">Rooms</p>
@@ -249,7 +255,7 @@ export default function CategoryHeroSection() {
 
               <div className="flex justify-center mt-6">
                 <button className="flex items-center gap-2 bg-[#174EA6] text-white px-10 py-3 rounded-full hover:bg-blue-700 transition"
-                onClick={() => navigate("/hotel-list")}>
+                  onClick={() => navigate("/hotel-list")}>
                   <Search size={18} />
                   Search
                 </button>

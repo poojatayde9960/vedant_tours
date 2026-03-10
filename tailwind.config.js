@@ -5,12 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
- extend: {
-  fontFamily: {
-    goodly: ["Goodly", "sans-serif"],
-    poppins: ["Poppins", "sans-serif"],
+    extend: {
+      fontFamily: {
+        goodly: ["Goodly", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
+      },
+    },
   },
-}
-},
   plugins: [],
 }

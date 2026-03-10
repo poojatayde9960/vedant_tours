@@ -2,7 +2,7 @@ import React from 'react';
 import CategoryHeroSection from '../components/CategoryHeroSection';
 import JourneySection from '../components/JourneySection';
 import DiscoverPlaces from '../components/DiscoverPlaces';
-import TravelBanner from '../components/TravelBanner';
+// import TravelBanner from '../components/TravelBanner';
 
 const Categories = () => {
   return (
@@ -10,7 +10,7 @@ const Categories = () => {
       <CategoryHeroSection />
       <JourneySection />
       <DiscoverPlaces />
-      <TravelBanner />
+      {/* <TravelBanner /> */}
     </div>
   )
 }

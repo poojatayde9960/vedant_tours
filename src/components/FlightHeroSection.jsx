@@ -121,7 +121,7 @@ export default function CategoryHeroSection() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative w-full  bg-gray-100">
+    <section className="relative w-full bg-gray-100 pb-20 md:pb-20">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -159,11 +159,10 @@ export default function CategoryHeroSection() {
                   className="flex items-center gap-2 text-sm font-medium"
                 >
                   <span
-                    className={`w-5 h-5 rounded-full border flex items-center justify-center ${
-                      tripType === type
-                        ? "bg-[#174EA6] border-[#174EA6]"
-                        : "border-gray-400"
-                    }`}
+                    className={`w-5 h-5 rounded-full border flex items-center justify-center ${tripType === type
+                      ? "bg-[#174EA6] border-[#174EA6]"
+                      : "border-gray-400"
+                      }`}
                   ></span>
 
                   {type === "oneway"

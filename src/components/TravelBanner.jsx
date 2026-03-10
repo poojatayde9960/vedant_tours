@@ -6,8 +6,8 @@ export default function TravelBanner() {
   const navigate = useNavigate();
 
   return (
-    <section className="px-6 mb-24 relative">
-      <div className="bg-[#FFB724] h-[360px] relative md:mt-0 mt-20 flex flex-col items-center justify-center text-center p-8 lg:p-12 group overflow-hidden">
+    <section className="px-6 mb-24  relative">
+      <div className="bg-[#FFB724] h-[360px] relative md:mt-20 mt-20 flex flex-col items-center justify-center text-center p-8 lg:p-12  group overflow-hidden">
         {/* SVG Clouds/Planes decorations */}
         <div className="absolute inset-0 pointer-events-none opacity-30">
           <div className="absolute top-10 right-20 animate-bounce delay-700">
@@ -39,21 +39,21 @@ export default function TravelBanner() {
         {/* Statues / Illustrations from pack */}
         <div className="absolute md:block hidden left-[-5%] -bottom-[10%] w-[350px] h-[350px] pointer-events-none">
           <img
-            src="/img/statue.png"
+            src="/public/img/statue.png"
             className="w-full h-full object-contain"
           />
         </div>
 
         <div className="absolute md:block hidden left-[15%] -bottom-[20%] w-[350px] h-[350px] pointer-events-none">
           <img
-            src="/img/flying1.png"
+            src="/public/img/flying1.png"
             className="w-full h-full object-contain"
           />
         </div>
 
         <div className="absolute md:block hidden left-[72%] -bottom-[24%] w-[450px] h-[350px] pointer-events-none">
           <img
-            src="/img/flying2.png"
+            src="/public/img/flying2.png"
             className="w-full h-full object-contain"
           />
         </div>
@@ -62,7 +62,7 @@ export default function TravelBanner() {
       {/* Hot air balloon outside parent to prevent cut */}
       <div className="absolute md:block hidden right-80 -top-16 w-32 h-32 z-20">
         <img
-          src="/img/para-balloon.png"
+          src="/public/img/para-balloon.png"
           className="w-full h-full object-contain"
         />
       </div>

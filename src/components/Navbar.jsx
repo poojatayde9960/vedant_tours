@@ -20,16 +20,16 @@ const Navbar = () => {
               <img
                 src="/img/logo.png"
                 alt="Vedant Logo"
-                className="h-16 w-auto"
+                className="h-12 md:h-16 w-auto"
               />
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-20 font-medium text-[#0644A0]">
+          <div className="hidden font-poppins md:flex items-center gap-20 font-medium text-[#0644A0]">
             <Link
               to="/about"
-              className="flex items-center gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
+              className="flex items-center font-poppins font-medium gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
             >
               About
               {/* <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" /> */}
@@ -37,7 +37,7 @@ const Navbar = () => {
 
             <Link
               to="/categories"
-              className="flex items-center gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
+              className="flex items-center font-poppins font-medium gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
             >
               Categories
               {/* <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" /> */}
@@ -45,7 +45,7 @@ const Navbar = () => {
 
             <Link
               to="/tour-packages"
-              className="flex items-center gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
+              className="flex items-center font-poppins font-medium gap-2 border-b-2 border-[#FFB724] pb-1 hover:text-blue-600 transition"
             >
               Tour Packages
               {/* <img src="/icons/Vector.svg" alt="icon" className="h-3 w-3" /> */}
@@ -80,24 +80,33 @@ const Navbar = () => {
       {/* Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md px-4 pb-4 space-y-4">
-          <Link to="/about" className="block hover:text-blue-600">
+          <Link to="/about" className="block hover:text-blue-600" onClick={() => setIsOpen(false)}>
             About
           </Link>
-          <Link to="/categories" className="block hover:text-blue-600">
+          <Link to="/categories" className="block hover:text-blue-600" onClick={() => setIsOpen(false)}>
             Categories
           </Link>
-          <Link to="/tour-packages" className="block hover:text-blue-600">
+          <Link to="/tour-packages" className="block hover:text-blue-600" onClick={() => setIsOpen(false)}>
             Tour Packages
           </Link>
 
-          <button className="w-full bg-gradient-to-l from-[#00357A] to-[#0061E0] text-white py-2 rounded-full hover:opacity-90 transition">
+          <button
+            className="w-full bg-gradient-to-l from-[#00357A] to-[#0061E0] text-white py-2 rounded-full hover:opacity-90 transition"
+            onClick={() => {
+              setIsOpen(false);
+              setOpenConnect(true);
+            }}
+          >
             Contact Us
           </button>
 
           <div className="flex justify-center">
             <div
               className="bg-gradient-to-t from-[#F76200] to-[#FFB724] p-2 rounded-full text-white cursor-pointer"
-              onClick={() => setOpenLogin(true)}
+              onClick={() => {
+                setIsOpen(false);
+                setOpenLogin(true);
+              }}
             >
               <FaUser />
             </div>

@@ -45,7 +45,7 @@ const LandingPage = () => {
       </section>
 
       <section id="book">
-        <TravelBanner />
+        {/* <TravelBanner /> */}
       </section>
     </div>
   );

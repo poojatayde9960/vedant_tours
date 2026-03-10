@@ -147,11 +147,11 @@ const TourPackages = () => {
                 </div>
               </div>
             </div>
-            <h2 className="text-[28px] sm:text-[36px] lg:text-[36px] font-medium font-goodly text-gray-900 leading-tight">
-              Explore The <span className="text-[#FC8605]">World's</span> Most{" "}
-              <br className="hidden lg:block" />
-              Loved <span className="text-[#0061E0]">Places</span>
+            <h2 className="text-xl sm:text-[36px] lg:text-[36px] font-medium font-goodly text-gray-900 leading-tight">
+              Explore The <span className="text-[#FC8605]">World's</span> Most
+              <br /> Loved <span className="text-[#0061E0]">Places</span>
             </h2>
+
           </div>
 
           {/* Category Filter Pills */}
@@ -184,56 +184,62 @@ const TourPackages = () => {
         {/* <div className="bg-[#C2EBFF7A] rounded-[40px] lg:rounded-full p-4 lg:p-4 mb-20 shadow-[0_20px_60px_-15px_rgba(0,97,224,0.1)] w-full mx-auto flex flex-col lg:flex-row items-stretch lg:items-center relative gap-4 lg:gap-0"> */}
         {/* Inner White Capsule for Inputs */}
 
-        <div className=" md:ml-0 md:mt-8 p-4 bg-[#C2EBFF7A]  flex  rounded-full border border-[#FFFFFF] md:w-full font-poppins">
-          <div className="bg-white rounded-full  flex   items-center md:gap-6 w-full  p-2">
+        <div className="md:ml-0 md:mt-8 mb-8 p-4 bg-[#C2EBFF7A] flex flex-col md:flex-row md:rounded-full rounded-xl border border-[#FFFFFF] md:w-full font-poppins gap-3">
+
+          <div className="bg-white md:rounded-full rounded-xl flex flex-col md:flex-row items-center md:gap-6 w-full p-3">
+
+            {/* Location */}
             <div className="flex items-center gap-2 px-4 py-2 w-full">
               <MapPin size={18} className="text-blue-600" />
               <select className="outline-none w-full text-[#0644A0]">
-                <option className="">Location</option>
+                <option>Location</option>
               </select>
             </div>
 
             <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
 
-            <div className="flex items-center gap-2 border-r px-4 py-2 w-full relative">
+            {/* Price */}
+            <div className="flex items-center gap-2 px-4 py-2 w-full">
               <Calendar size={18} className="text-[#0644A0]" />
               <input
-                type="text" // still date, but browser icon hidden
+                type="text"
                 placeholder="Price"
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
-                className="outline-none w-full text-[#0644A0] placeholder:text-[#0644A0] appearance-none"
+                className="outline-none w-full text-[#0644A0] placeholder:text-[#0644A0]"
               />
-              {/* Chevron Icon */}
-              {/* <ChevronDown size={16} className="absolute right-4 text-gray-400 pointer-events-none" /> */}
             </div>
 
-            <div className="flex items-center gap-2 px-4 py-2 w-full relative">
+            {/* Tour Type */}
+            <div className="flex items-center gap-2 px-4 py-2 w-full">
               <Calendar size={18} className="text-[#0644A0]" />
               <input
-                type="text" // still date, but browser icon hidden
+                type="text"
                 placeholder="Tour Type"
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
-                className="outline-none w-full text-[#0644A0] placeholder:text-[#0644A0] appearance-none"
+                className="outline-none w-full text-[#0644A0] placeholder:text-[#0644A0]"
               />
-              {/* Chevron Icon */}
-              {/* <ChevronDown size={16} className="absolute right-4 text-gray-400 pointer-events-none" /> */}
             </div>
 
             <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
 
+            {/* Duration */}
             <div className="flex items-center gap-2 px-4 py-2 w-full">
               <Users size={18} className="text-blue-600" />
               <select className="outline-none w-full text-[#0644A0]">
                 <option>Duration</option>
               </select>
             </div>
+
           </div>
-          <button className="bg-gradient-to-l from-[#FFB724] to-[#F76200] text-white md:px-14 md:py-2 rounded-full flex items-center justify-center gap-2 transition whitespace-nowrap -ml-8 md:-ml-12 z-10">
-            <Search size={18} className="flex-shrink-0" />
-            <span className="text-center">Search Tour</span>
+
+          {/* Search Button */}
+          <button className="bg-gradient-to-l from-[#FFB724] to-[#F76200] text-white px-8 py-3 rounded-full flex items-center justify-center gap-2 transition whitespace-nowrap w-full md:w-auto">
+            <Search size={18} />
+            <span>Search Tour</span>
           </button>
+
         </div>
 
         {/* </div> */}
@@ -438,7 +444,7 @@ px-12 xl:p-32 text-left shadow-2xl"
           </div>
 
           {/* Plane */}
-          <div className="absolute  -bottom-6 xl:-bottom-36 right-0 w-[75%] xl:w-[65%] z-20">
+          <div className="absolute  -bottom-6 xl:-bottom-36 right-0 w-[75%] xl:w-[61%] z-20">
             <img src="/img/Group 69.png" className="w-full" alt="Plane" />
           </div>
         </div>

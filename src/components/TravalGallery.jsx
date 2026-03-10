@@ -77,20 +77,20 @@ export default function TravelGallery() {
 function GalleryLayout({ images }) {
   return (
     <>
-      {/* Mobile Layout */}
-      <div className="grid grid-cols-2 gap-20 md:hidden">
-        {images.slice(0, 6).map((img, i) => (
+      {/* Mobile Layout - Single Row Carousel */}
+      <div className="flex md:hidden justify-center items-center gap-4 w-max shrink-0 px-4">
+        {images.map((img, i) => (
           <GalleryItem
             key={i}
             img={img}
-            className="w-full h-[170px] rounded-2xl"
+            className="w-[140px] h-[180px] rounded-2xl shrink-0"
           />
         ))}
       </div>
 
       {/* Desktop / Tablet ZigZag */}
       <div className="hidden md:flex justify-center items-start gap-4 lg:gap-6 w-max shrink-0">
-        <div className="flex flex-col  gap-4 shrink-0">
+        <div className="flex flex-col gap-4 shrink-0">
           <GalleryItem img={images[0]} />
           <GalleryItem img={images[1]} />
         </div>
@@ -100,7 +100,12 @@ function GalleryLayout({ images }) {
           <GalleryItem img={images[3]} />
         </div>
 
-        <div className="flex flex-col gap-6 md:mt-28 shrink-0">
+        <div className="flex flex-col gap-6 md:mt-28 shrink-0 relative">
+          {/* <img
+            src="/img/para-balloon.png"
+            alt="balloon"
+            className="absolute -top-16 left-1/2 -translate-x-1/2 w-12 h-auto z-10"
+          /> */}
           <GalleryItem img={images[4]} />
         </div>
 
