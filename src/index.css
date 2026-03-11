@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Goodly Font */
+
+@font-face {
+  font-family: "Goodly";
+  src: url("/img/goodly-font/goodly-light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Goodly";
+  src: url("/img/goodly-font/goodly-regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Goodly";
+  src: url("/img/goodly-font/goodly-medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Goodly";
+  src: url("/img/goodly-font/goodly-bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Goodly";
+  src: url("/img/goodly-font/goodly-semibold.otf") format("opentype");
+  font-weight: 800;
+}
+
+.continuousSwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .dealsSwiper .swiper-pagination {
+    display: none;
+  }
+}
