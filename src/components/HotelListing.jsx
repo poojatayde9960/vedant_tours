@@ -63,7 +63,7 @@ export default function HotelListing() {
   const navigate = useNavigate();
 
   return (
-    <div className=" min-h-screen font-poppins p-4 md:py-8 mt-[500px] md:mt-72">
+    <div className=" min-h-screen font-poppins p-4 md:py-8 mt-[350px] md:mt-28">
       <div className="w-full mx-auto grid lg:grid-cols-4 gap-6">
         {/* Sidebar */}
         <div className="space-y-4">
@@ -187,7 +187,7 @@ export default function HotelListing() {
                   </div>
 
                   <div className="mt-3">
-                    <span className="text-blue-600 font-bold text-lg">
+                    <span className="text-blue-600 font-poppins font-medium text-lg">
                       Rs.{hotel.price}
                     </span>
                     <span className="text-sm text-gray-500 ml-2">

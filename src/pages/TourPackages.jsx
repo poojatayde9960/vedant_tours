@@ -173,7 +173,7 @@ const TourPackages = () => {
 
                 {/* Orange Underline */}
                 {activeTab === cat && (
-                  <span className="absolute left-0 font-poppins -bottom-1 w-full h-[3px] bg-[#F76200] rounded-full transition-all"></span>
+                  <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[#F76200] rounded-full transition-all"></span>
                 )}
               </button>
             ))}

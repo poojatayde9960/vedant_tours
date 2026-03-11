@@ -76,7 +76,7 @@ export default function CategoryHeroSection() {
       </div>
 
       {/* Search Card Wrapper */}
-      <div className="absolute z-20 md:mt-24 md:mb-9 mb-9 mt-28 inset-x-0 px-4 sm:px-6 md:px-0 md:flex justify-center top-[45%] md:top-[480px]">
+      <div className="absolute z-20 md:mt-24 md:mb-9 mb-9  mt-28 inset-x-0 px-4 sm:px-6 md:px-0 md:flex justify-center top-[45%] md:top-[480px]">
 
         {/* FLIGHT SEARCH */}
         {activeService === "flight" && (

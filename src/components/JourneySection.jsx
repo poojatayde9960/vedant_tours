@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function JourneySection() {
   return (
     // <section className="w-full mt-52 py-16 pb-32 md:pb-16 px-6 md:px-20 md:mt-20 min-h-screen relative overflow-hidden">
-    <section className="w-full mt-52 py-16 px-6 pb-32 md:-mb-40 md:px-20 md:mt-10 h-[80%] relative overflow-hidden">
+    <section className="w-full mt-52 md:mt-40 py-16 px-6 pb-32 md:-mb-40 md:px-20  h-[80%] relative overflow-hidden">
       {/* Decorative Helicopter */}
       <img
         src="/img/Frame 11.png"
@@ -70,22 +70,16 @@ export default function JourneySection() {
 /* Step Component */
 function Step({ number, title, description, position }) {
   return (
-    <div className={`absolute ${position} flex items-start mt-16 md:mt-0 gap-2 md:gap-4`}>
-
+    <div className={`absolute ${position} flex items-start md:p-0 md:mt-0 mt-20 md:gap-4`}>
       {/* Number */}
-      <span className="absolute -left-2 md:-left-12 text-[60px] md:text-[120px] lg:text-[150px] font-medium text-blue-100 font-poppins">
+      <span className="absolute md:-left-12 md:mt-12 md:text-[550%]  text-[450%] font-medium text-blue-100 font-poppins">
         {number}
       </span>
 
       {/* Text */}
-      <div className="ml-10 md:ml-6 mt-6 md:mt-8">
-        <h3 className="text-[16px] md:text-[20px] font-medium text-gray-800 font-poppins">
-          {title}
-        </h3>
-
-        <p className="mt-1 text-[13px] md:text-[17px] text-[#00000094] font-normal max-w-[200px] md:max-w-xs font-poppins">
-          {description}
-        </p>
+      <div className="md:ml-6 md:mt-8 ml-14">
+        <h3 className="text-[20px] font-medium text-gray-800 font-poppins">{title}</h3>
+        <p className="mt-2 text-[#00000094] text-[17px] font-normal max-w-xs font-poppins">{description}</p>
       </div>
     </div>
   );

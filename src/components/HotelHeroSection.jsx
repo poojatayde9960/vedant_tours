@@ -59,7 +59,7 @@ export default function HotelHeroSection() {
 
                 <div>
                   <p className="text-sm font-semibold">Location</p>
-                  <p className="text-xs text-gray-500 truncate">
+                  <p className="text-[12px] sm:text-xm text-gray-500 break-words leading-snug">
                     Chhatrapati Sambhaji Nagar
                   </p>
                 </div>

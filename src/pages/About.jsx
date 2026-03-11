@@ -253,7 +253,7 @@ const About = () => {
                 Seamless <span className="text-[#0061E0]">Travel</span>{" "}
                 Experience
               </h2>
-              <p className="text-[#00000094] md:mt-4 mt-6 text-[13px] sm:text-[18px] lg:text-[17px] font-medium w-full max-w-full text-center lg:text-left mx-auto lg:mx-0 font-poppins leading-[24px] sm:leading-[28px] lg:leading-[24px]">
+              <p className="text-[#00000094] mt-6 text-[13px] sm:text-[18px] lg:text-[17px] font-medium w-full max-w-full font-poppins text-left leading-[22px] sm:leading-[28px] lg:leading-[24px]">
                 From planning to booking and beyond,
                 <br className="block sm:hidden" />
                 we provide complete travel solutions
