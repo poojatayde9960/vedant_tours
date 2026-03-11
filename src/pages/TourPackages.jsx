@@ -154,8 +154,8 @@ const TourPackages = () => {
 
           </div>
 
-          {/* Category Filter Pills */}
-          <div className="flex flex-nowrap items-center justify-center font-['Poppins'] lg:justify-end gap-4 p-2 w-full lg:w-auto overflow-x-auto">
+          {/* Category Filter Pills (Desktop only) */}
+          <div className="hidden md:flex flex-nowrap items-center justify-center font-['Poppins'] lg:justify-end gap-4 p-2 w-full lg:w-auto overflow-x-auto">
             {["Popular", "Luxurious", "Adventures"].map((cat, i) => (
               <button
                 key={i}
@@ -242,7 +242,30 @@ const TourPackages = () => {
 
         </div>
 
-        {/* </div> */}
+        {/* Category Filter Pills (Mobile - shown below search bar) */}
+        <div className="flex md:hidden flex-nowrap items-center justify-center font-['Poppins'] gap-4 p-4 w-full overflow-x-auto mb-4">
+          {["Popular", "Luxurious", "Adventures"].map((cat, i) => (
+            <button
+              key={i}
+              onClick={() => setActiveTab(cat)}
+              className="relative font-medium text-[15px] font-poppins transition-all pb-2 whitespace-nowrap"
+            >
+              <span
+                className={`${activeTab === cat
+                  ? "text-[#0061E0]"
+                  : "text-gray-400 font-poppins hover:text-gray-600"
+                  } transition-colors`}
+              >
+                {cat}
+              </span>
+
+              {/* Orange Underline */}
+              {activeTab === cat && (
+                <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[#F76200] rounded-full transition-all"></span>
+              )}
+            </button>
+          ))}
+        </div>
 
         {/* Tour Grid */}
         <div className="grid  md:mt-6 grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 lg:gap-y-8">
@@ -315,7 +338,7 @@ const TourPackages = () => {
                 {/* Price */}
                 <div className="flex items-center justify-between">
                   <div className="space-y-1">
-                    <p className="text-[29px] font-medium font-['Poppins'] text-[#0644A0]">
+                    <p className=" md:text-[29px] text-[27px] font-medium font-['Poppins'] text-[#0644A0]">
                       {card.price}
                       <span className="text-[12px] text-[#00000094] font-['Poppins']">
                         {" "}
@@ -353,8 +376,8 @@ const TourPackages = () => {
       <section className="px-4 sm:px-6 mb-24 lg:mb-40">
         {/* ================= MOBILE VERSION ================= */}
         <div
-          className="relative lg:hidden h-[520px] 
-  rounded-[30px] 
+          className="relative lg:hidden h-[440px] 
+  rounded-[20px] 
   overflow-hidden 
   flex flex-col 
   items-center justify-center 
@@ -380,7 +403,7 @@ const TourPackages = () => {
     leading-tight 
     -mt-20"
             >
-              Customised <span className="text-[#FFB724]">Your</span> <br />{" "}
+              Customised <span className="text-[#FFB724]">Your</span> {" "}
               Trip
             </h2>
             <button

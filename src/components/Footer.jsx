@@ -102,7 +102,7 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-3 gap-2 text-left">
-        <p className="text-[14px] font-medium">
+        <p className="md:text-[14px] text-[12px] font-medium">
           © 2026 Vedant Tours & Travel. All Rights Reserved.
         </p>
 

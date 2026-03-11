@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function JourneySection() {
   return (
     // <section className="w-full mt-52 py-16 pb-32 md:pb-16 px-6 md:px-20 md:mt-20 min-h-screen relative overflow-hidden">
-    <section className="w-full mt-52 md:mt-40 py-16 px-6 pb-32 md:-mb-40 md:px-20  h-[80%] relative overflow-hidden">
+    <section className="w-full mt-16 md:mt-40 py-16 px-6 pb-32 md:-mb-40 md:px-20  h-[80%] relative overflow-hidden">
       {/* Decorative Helicopter */}
       <img
         src="/img/Frame 11.png"
@@ -48,15 +48,15 @@ export default function JourneySection() {
 
             <Step
               number="2"
-              title="Travel & Enjoy"
-              description="Relax while we handle the details. Enjoy a smooth, stress-free journey with dedicated support at every step."
+              title="Plan Your Trip"
+              description="Choose your dream destination and travel dates. Our team helps you plan the perfect itinerary based on your preferences and budget.."
               position="md:top-10 md:left-[43%] top-[70px]"
             />
 
             <Step
               number="3"
-              title="Travel & Enjoy"
-              description="Relax while we handle the details. Enjoy a smooth, stress-free journey with dedicated support at every step."
+              title="Book With Ease"
+              description="Secure your flights, hotels, and travel services in just a few steps with our simple and reliable booking process.."
               position="md:-top-52 md:-right-10 top-60"
             />
           </div>
@@ -79,7 +79,7 @@ function Step({ number, title, description, position }) {
       {/* Text */}
       <div className="md:ml-6 md:mt-8 ml-14">
         <h3 className="text-[20px] font-medium text-gray-800 font-poppins">{title}</h3>
-        <p className="mt-2 text-[#00000094] text-[17px] font-normal max-w-xs font-poppins">{description}</p>
+        <p className="mt-2 text-[#00000094] md:text-[17px] text-sm font-normal max-w-xs text-gray-600 font-poppins">{description}</p>
       </div>
     </div>
   );

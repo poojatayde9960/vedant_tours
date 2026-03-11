@@ -5,7 +5,7 @@ import { RiRefund2Fill } from "react-icons/ri";
 
 const FlightDetails = () => {
   return (
-    <div className="relative min-h-screen pb-[1150px]  md:pb-[500px]">
+    <div className="relative min-h-screen pb-[1111px]  md:pb-[500px]">
       <div className="relative h-[500px]">
         {/* Background Image */}
         <img

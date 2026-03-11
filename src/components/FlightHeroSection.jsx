@@ -70,7 +70,7 @@ export default function CategoryHeroSection() {
             </div>
 
             {/* Swap Icon */}
-            <div className="flex items-center justify-center my-1 md:my-0">
+            <div className="hidden md:flex items-center justify-center my-1 md:my-0">
               <div className="bg-[#FFB724] w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center shadow text-white text-lg">
                 ⇄
               </div>

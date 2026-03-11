@@ -43,31 +43,31 @@ export default function CategoryHeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-10 pb-96 md:pt-20 md:pb-96">
-        <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium max-w-3xl">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-24 pb-96 md:pt-20 md:pb-96">
+        <h1 className="text-white text-3xl font-poppins sm:text-4xl md:text-5xl font-medium max-w-3xl">
           Complete Travel & Lifestyle Solutions
         </h1>
 
-        <p className="text-white/90 mt-4 md:mt-8 max-w-2xl text-sm sm:text-base">
+        <p className="text-white/90 mt-4 md:mt-8 font-poppins max-w-2xl text-sm sm:text-base">
           Discover a wide range of services designed to make your travel
           planning effortless, curated experiences, secure bookings, and
           reliable support.
         </p>
 
         {/* Tabs */}
-        <div className="mt-6 flex md:flex-wrap md:mt-10 gap-2 md:gap-4 justify-start md:justify-center bg-white p-2 md:p-3 rounded-full overflow-x-auto no-scrollbar">
+        <div className="mt-4 flex md:flex-wrap md:mt-10 gap-1.5 md:gap-4 justify-start md:justify-center bg-white p-1.5 md:p-3 rounded-full overflow-x-auto no-scrollbar">
 
           {options.map((option) => (
             <button
               key={option.label}
               onClick={() => setActiveService(option.value)}
-              className={`flex items-center gap-1 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full font-medium text-xs md:text-sm whitespace-nowrap transition
+              className={`flex items-center gap-1 md:gap-2 px-2.5 md:px-4 py-1 md:py-2 rounded-full font-medium text-[11px] md:text-sm whitespace-nowrap transition
       ${activeService === option.value
                   ? "bg-[#0644A0] text-white"
                   : "bg-white text-blue-600 hover:bg-blue-600 hover:text-white"
                 }`}
             >
-              <span className="text-xs md:text-sm">{option.icon}</span>
+              <span className="text-[11px] md:text-sm">{option.icon}</span>
               {option.label}
             </button>
           ))}
@@ -76,7 +76,7 @@ export default function CategoryHeroSection() {
       </div>
 
       {/* Search Card Wrapper */}
-      <div className="absolute z-20 md:mt-24 md:mb-9 mb-9  mt-28 inset-x-0 px-4 sm:px-6 md:px-0 md:flex justify-center top-[45%] md:top-[480px]">
+      <div className="absolute z-20 md:mt-24 md:mb-9 mb-9  mt-12 inset-x-0 px-4 sm:px-6 md:px-0 md:flex justify-center top-[45%] md:top-[480px]">
 
         {/* FLIGHT SEARCH */}
         {activeService === "flight" && (
@@ -129,12 +129,11 @@ export default function CategoryHeroSection() {
               </div>
 
               {/* Swap */}
-              <div className="flex justify-center items-center md:mt-6">
+              <div className="hidden md:flex justify-center items-center md:mt-6">
                 <div className="bg-yellow-400 p-3 rounded-full shadow">
                   <ArrowRightLeft size={18} />
                 </div>
               </div>
-
               {/* To */}
               <div className="flex-1 flex flex-col">
                 <p className="text-xs text-gray-500 mb-1">Flying To</p>

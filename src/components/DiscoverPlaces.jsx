@@ -13,7 +13,7 @@ export default function DiscoverPlaces() {
   ];
 
   return (
-    <section className="w-full min-h-screen bg-[#C2EBFF7A] md:py-10 pb-16 md:pb-10 md:mt-0 px-6 lg:px-20 overflow-hidden md:mb-10">
+    <section className="w-full min-h-screen bg-[#C2EBFF7A] md:py-10 pb-16 md:pb-10 -mt-32 md:mt-0 px-6 lg:px-20 overflow-hidden md:mb-10">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-2xl md:mt-0 mt-10 font-goodly font-medium sm:text-3xl md:text-[36px] text-gray-800">
@@ -28,7 +28,7 @@ export default function DiscoverPlaces() {
         </p>
 
         {/* Circle Layout */}
-        <div className="relative mt-24 md:mt-[130px] flex items-center justify-center">
+        <div className="relative mt-16 md:mt-[130px] flex items-center justify-center">
           {/* Center Globe */}
           <div className="w-56 h-56 sm:w-72 md:block hidden sm:h-72 md:w-[960px] rounded-full flex items-start justify-center relative overflow-visible">
             <img
@@ -97,14 +97,18 @@ export default function DiscoverPlaces() {
         </div>
 
         {/* Mobile Grid */}
-        <div className="grid md:grid-cols-3 grid-cols-2 gap-4 md:mt-12 md:hidden">
+        <div className="grid grid-cols-3 gap-10 md:mt-12 md:hidden place-items-center">
           {places.map((img, index) => (
-            <img
+            <div
               key={index}
-              src={`${img}?auto=format&fit=crop&w=300&q=80`}
-              alt="place"
-              className="md:w-full md:h-24 w-36 h-36 rounded-full object-cover border-4 border-white shadow-md"
-            />
+              className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-md"
+            >
+              <img
+                src={`${img}?auto=format&fit=crop&w=300&q=80`}
+                alt="place"
+                className="w-full h-full object-cover"
+              />
+            </div>
           ))}
         </div>
       </div>

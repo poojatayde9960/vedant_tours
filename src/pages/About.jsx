@@ -62,7 +62,7 @@ const About = () => {
                   Crafting Unforgettable Journeys Across The Globe
                 </h1>
                 <div className="max-w-xs sm:max-w-md mb-8 lg:mr-24 ">
-                  <p className="text-white text-lg ">
+                  <p className="text-white md:text-lg  text-md ">
                     We combine expertise, personalized <br /> service, and
                     global partnerships to deliver <br /> unforgettable travel
                     experiences.
@@ -127,7 +127,7 @@ const About = () => {
           </div>
 
           {/* Main Image */}
-          <div className="relative mr-4 -ml-7 sm:ml-0">
+          <div className="relative mr-4 -ml-36 sm:ml-0">
 
             <img
               src="/img/group5.png"
@@ -247,7 +247,7 @@ const About = () => {
           {/* Left Content */}
           <div className="md:py-0 py-3">
             <div className="md:mb-0 mb-3">
-              <h2 className="md:text-[36px] text-xl font-['Goodly'] font-medium leading-[1.6] text-gray-900 text-center lg:text-left">
+              <h2 className="md:text-[36px] text-xl font-['Goodly'] font-medium leading-[1.6] text-gray-900 text-left lg:text-left">
                 Everything You <span className="text-[#F76200]">Need for</span>{" "}
                 a <br className="hidden lg:block" />
                 Seamless <span className="text-[#0061E0]">Travel</span>{" "}
@@ -315,17 +315,17 @@ const About = () => {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="flex w-full space-y-4 sm:flex-row sm:items-center gap-3 sm:gap-4 group"
+                    className="flex w-full space-y-4 sm:flex-row sm:items-center gap-6 sm:gap-4 group"
                   >
                     {/* Icon Box */}
-                    <div className="w-16 sm:w-20 h-16 sm:h-20 mt-2 sm:mt-0 bg-[#FFB724] rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-500/30 group-hover:scale-110 transition-transform shrink-0 text-4xl sm:text-5xl">
+                    <div className="w-12 h-12 sm:w-20 mb-1 sm:h-20 mt-1 sm:mt-0 bg-[#FFB724] rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-500/30 group-hover:scale-110 transition-transform shrink-0 text-3xl sm:text-5xl">
                       {item.icon}
                     </div>
 
                     {/* Text */}
                     <div className="space-y-2 font-['Poppins'] text-[#000000]">
-                      <h4 className="font-medium md:text-[15px]">{item.title}</h4>
-                      <p className="text-[13px] sm:text-[16px] md:text-[17px] lg:text-[14px] leading-relaxed max-w-full font-medium opacity-70">
+                      <h4 className="font-medium text-[14px]  md:text-[15px]">{item.title}</h4>
+                      <p className="hidden sm:block text-[13px] sm:text-[16px] md:text-[17px] lg:text-[14px] leading-relaxed max-w-full font-medium opacity-70">
                         {item.desc}
                       </p>
                     </div>
