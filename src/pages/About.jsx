@@ -51,11 +51,11 @@ const About = () => {
       <section className="px-4 lg:px-6 py-4 lg:py-4">
         <div className="relative w-full h-[500px] sm:h-[700px] lg:h-[680px] overflow-visible">
           <div className="w-full h-full rounded-[20px] lg:rounded-[20px] overflow-hidden relative">
-            <img
+            {/* <img
               src={heroImg.img4}
               className="w-full h-full object-cover "
               alt="Hero"
-            />
+            /> */}
             <div className="absolute inset-0 bg-[#0061E0]/20 flex flex-col justify-end p-6 sm:p-8 lg:p-20">
               <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 lg:gap-10">
                 <h1 className="text-white text-[28px] sm:text-[40px] lg:text-[72px] font-['Goodly'] leading-[1.1] lg:leading-[1.05] max-w-3xl drop-shadow-lg">
@@ -129,11 +129,7 @@ const About = () => {
           {/* Main Image */}
           <div className="relative mr-4 -ml-36 sm:ml-0">
 
-            <img
-              src="/img/group5.png"
-              className="w-full h-auto"
-              alt="Travel Collage"
-            />
+
 
             {/* Happy Customers Badge */}
             <div className="hidden lg:flex flex-col absolute -bottom-12 left-1/2 -translate-x-1/2 lg:left-[70%] items-center bg-white/40 backdrop-blur-md p-4 rounded-3xl shadow-xl lg:bg-transparent lg:p-0 lg:shadow-none">

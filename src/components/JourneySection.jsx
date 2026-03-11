@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function JourneySection() {
   return (
     // <section className="w-full mt-52 py-16 pb-32 md:pb-16 px-6 md:px-20 md:mt-20 min-h-screen relative overflow-hidden">
-    <section className="w-full mt-16 md:mt-40 py-16 px-6 pb-32 md:-mb-40 md:px-20  h-[80%] relative overflow-hidden">
+    <section className="w-full mt-12 md:mt-40 py-16 px-6 pb-32 md:-mb-40 md:px-20  h-[80%] relative overflow-hidden">
       {/* Decorative Helicopter */}
       <img
         src="/img/Frame 11.png"
@@ -21,10 +21,10 @@ export default function JourneySection() {
       <div className="max-w-7xl mx-auto">
         {/* Top Content */}
         <div className="max-w-xl">
-          <h2 className="text-3xl md:text-[36px] font-goodly font-medium  text-gray-800">
+          <h2 className="text-xl sm:text-[36px] font-goodly font-medium  text-gray-800">
             Your Journey <span className="text-orange-500">Made</span> Easy
           </h2>
-          <p className="mt-4 text-gray-600 text-sm md:text-[17px] font-poppins">
+          <p className="mt-4 text-gray-600  text-sm md:text-[17px] font-poppins">
             From selecting your destination to enjoying your trip, we handle
             everything with precision and care.
           </p>

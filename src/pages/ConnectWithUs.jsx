@@ -1,5 +1,6 @@
 import React from "react";
-import { FaCamera, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaCamera, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { MdCall } from "react-icons/md";
 
 const ConnectWithUs = ({ onClose }) => {
   return (
@@ -9,7 +10,7 @@ const ConnectWithUs = ({ onClose }) => {
     >
       {/* Main Card */}
       <div
-        className="relative rounded-[40px] bg-white max-w-5xl w-full overflow-hidden shadow-2xl"
+        className="relative md:rounded-[40px] rounded-[30px] bg-white max-w-5xl w-full overflow-hidden shadow-2xl"
         onClick={(e) => e.stopPropagation()} // prevent close when clicking inside
       >
         {/* Background Image */}
@@ -21,7 +22,7 @@ const ConnectWithUs = ({ onClose }) => {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col md:flex-row items-center p-3">
-          
+
           {/* Girl Image */}
           <div className="hidden md:flex w-1/2 items-center justify-center p-10">
             <img
@@ -40,7 +41,7 @@ const ConnectWithUs = ({ onClose }) => {
           </div>
 
           {/* Form Section */}
-          <div className="w-full md:w-1/1 md:p-10 p-3 text-white bg-[#0644A0] rounded-xl">
+          <div className="w-full md:w-1/1 md:p-10 p-3 text-white bg-[#0644A0] rounded-[20px] md:rounded-2xl">
 
             <img
               src="/img/flying1.png"
@@ -63,7 +64,7 @@ const ConnectWithUs = ({ onClose }) => {
               {/* Name */}
               <div className="flex items-center gap-2 md:gap-10 md:ml-20">
                 <div className="bg-orange-500 w-12 h-10 flex items-center justify-center rounded-full text-white text-xl">
-                  <FaCamera />
+                  <FaInstagram />
                 </div>
 
                 <input
@@ -76,7 +77,7 @@ const ConnectWithUs = ({ onClose }) => {
               {/* Contact */}
               <div className="flex items-center gap-2 md:gap-10 md:ml-20">
                 <div className="bg-orange-500 w-12 h-10 flex items-center justify-center rounded-full text-white text-xl">
-                  <FaPhoneAlt />
+                  <FaWhatsapp />
                 </div>
 
                 <input
@@ -89,7 +90,7 @@ const ConnectWithUs = ({ onClose }) => {
               {/* Location */}
               <div className="flex items-center gap-2 md:gap-10 md:ml-20">
                 <div className="bg-orange-500 w-12 h-10 flex items-center justify-center rounded-full text-white text-xl">
-                  <FaMapMarkerAlt />
+                  <MdCall />
                 </div>
 
                 <input

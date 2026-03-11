@@ -16,14 +16,16 @@ export default function DiscoverPlaces() {
     <section className="w-full min-h-screen bg-[#C2EBFF7A] md:py-10 pb-16 md:pb-10 -mt-32 md:mt-0 px-6 lg:px-20 overflow-hidden md:mb-10">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-2xl md:mt-0 mt-10 font-goodly font-medium sm:text-3xl md:text-[36px] text-gray-800">
+        <h2 className="text-xl sm:text-[36px] md:mt-0 mt-10 font-goodly font-medium sm:text-3xl md:text-[36px] text-gray-800">
           Discover Beautiful <span className="text-orange-500">Places</span>{" "}
           Across The <span className="text-blue-600">Globe</span>
         </h2>
 
-        <p className="mt-4 text-gray-600 text-sm sm:text-[17px] max-w-2xl mx-auto font-poppins">
-          From tropical beaches and romantic islands to historic cities and<br />
-          breathtaking mountains explore handpicked destinations designed for<br />
+        <p className="mt-4 text-[13px] font-medium md:text-[15px] text-gray-600 sm:text-[17px] max-w-2xl mx-auto font-poppins leading-relaxed">
+          From tropical beaches and romantic islands to historic cities and
+          <br className="hidden md:block" />
+          breathtaking mountains explore handpicked destinations designed for
+          <br className="hidden md:block" />
           every kind of traveler.
         </p>
 

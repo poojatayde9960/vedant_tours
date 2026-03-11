@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="w-full px-4  sm:px-6 md:px-10 relative overflow-hidden mt-[110%] md:mt-60 md:pt-40">
+    <section className="w-full px-4  sm:px-6 md:px-10 relative overflow-hidden mt-[70%] md:mt-60 md:pt-40">
 
       {/* Balloon */}
       <img
@@ -47,12 +47,13 @@ const AboutSection = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex gap-4 font-goodly justify-center md:justify-end">
-              <button className="bg-[#0644A0] text-white text-[14px] md:px-6 md:py-2 px-3 py-2 rounded-full">
+            {/* Buttons */}
+            <div className="flex gap-4  font-goodly justify-center md:justify-end pt-2 md:mt-0">
+              <button className="bg-[#0644A0] text-white text-[14px] md:px-6 md:py-2 px-3 py-2 rounded-full whitespace-nowrap">
                 Personalized <br className="hidden md:block" /> itineraries
               </button>
 
-              <button className="bg-[#FFB724] text-white text-[15px] md:px-6 md:py-3 px-3 py-2 rounded-full">
+              <button className="bg-[#FFB724] text-white text-[15px] md:px-6 md:py-3 px-3 py-2 rounded-full whitespace-nowrap">
                 Transparent <br className="hidden md:block" /> pricing
               </button>
             </div>

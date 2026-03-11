@@ -45,12 +45,11 @@ const ServicesSection = () => {
             Perfect <span className="text-blue-600">Trip</span>
           </h2>
 
-          <p className="text-gray-600 font-medium max-w-md font-poppins text-[14px] md:text-[15px]">
+          <p className="text-gray-600 font-medium w-full md:max-w-md font-poppins text-[14px] md:text-[16px]">
             From bookings to visas and personalized tour planning, we handle
             every detail of your journey so you can travel stress free and focus
             on making memories.
           </p>
-
         </div>
 
         {/* Services Grid */}

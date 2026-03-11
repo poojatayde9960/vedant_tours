@@ -9,7 +9,7 @@ const YourJourney = () => {
 
                 {/* Left Images */}
                 <div className="relative flex flex-col w-full items-center lg:items-start">
-                    <div className="relative w-full max-w-md md:max-w-4xl">
+                    <div className="relative w-full max-w-md md:max-w-4xl -ml-14 md:ml-0">
                         <img src="/img/Group-68.png" alt="travel" />
                     </div>
 
@@ -17,7 +17,7 @@ const YourJourney = () => {
                         src="/img/suitcase-2.png"
                         className="hidden lg:block absolute md:h-52 right-0 -top-40 md:right-[-750px] z-20"
                     />
-                    {/* ✅ Counter moved here */}
+                    {/* ✅ Counter moved heare */}
                     <div className="flex items-center gap-4 pt-6 md:ml-24">
                         <BiSolidPlaneAlt className="text-[#0061E0]" size={40} />
                         <h3 className="text-2xl sm:text-[36px] font-goodly font-medium">

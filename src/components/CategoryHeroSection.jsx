@@ -44,7 +44,7 @@ export default function CategoryHeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-24 pb-96 md:pt-20 md:pb-96">
-        <h1 className="text-white text-3xl font-poppins sm:text-4xl md:text-5xl font-medium max-w-3xl">
+        <h1 className="text-white text-3xl font-goodly sm:text-4xl md:text-5xl font-medium max-w-3xl">
           Complete Travel & Lifestyle Solutions
         </h1>
 

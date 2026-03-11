@@ -29,8 +29,8 @@ const HeroSection = () => {
       <div className="relative z-10 mt-[20vh] md:mt-[16vh] w-full px-4 sm:px-8 lg:px-16 text-white">
         <div className="max-w-5xl mx-auto text-center">
           {/* Heading */}
-          <h1 className="text-2xl -mt-24 md:-mt-0 md:text-6xl leading-tight text-[#1E1E1E] font-goodly font-medium">
-            <span className="bg-gradient-to-r from-[#FFB724] to-[#F76200] bg-clip-text text-transparent">
+          <h1 className=" -mt-24 text-xl sm:text-[36px] md:-mt-0 md:text-6xl leading-tight text-[#1E1E1E] font-goodly font-medium">
+            <span className="bg-gradient-to-r  from-[#FFB724] to-[#F76200] bg-clip-text text-transparent">
               Discover
             </span>{" "}
             Journeys That
@@ -71,7 +71,7 @@ const HeroSection = () => {
               {/* Location */}
               <div className="flex items-center gap-2 px-3 py-5 md:px-4 md:py-2 w-full">
                 <MapPin size={16} className="text-blue-600" />
-                <select className="outline-none w-full text-[#0644A0] text-sm md:text-base">
+                <select className="outline-none bg-transparent w-full  text-[#0644A0] text-sm md:text-base">
                   <option className="font-poppins font-medium">Location</option>
                 </select>
               </div>
@@ -96,7 +96,7 @@ const HeroSection = () => {
                 <input
                   ref={hiddenDateRef}
                   type="date"
-                  className="absolute opacity-0 pointer-events-none"
+                  className="absolute bg-remove opacity-0 pointer-events-none"
                   onChange={(e) => setSelectedDate(e.target.value)}
                 />
               </div>
@@ -106,7 +106,8 @@ const HeroSection = () => {
               {/* Travelers */}
               <div className="flex items-center gap-2 px-3 py-5 md:px-4 md:py-2 w-full">
                 <Users size={16} className="text-blue-600" />
-                <select className="outline-none w-full text-[#0644A0] text-sm md:text-base">
+
+                <select className="outline-none w-full bg-transparent text-[#0644A0] text-sm md:text-base">
                   <option className="font-poppins font-medium">Travelers</option>
                 </select>
               </div>

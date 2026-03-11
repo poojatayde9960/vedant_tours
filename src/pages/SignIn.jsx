@@ -7,14 +7,11 @@ const SignIn = ({ onClose }) => {
       onClick={onClose} // outside click close
     >
       <div
-        className="md:w-[950px] md:h-[600px] font-poppins rounded-3xl bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative shadow-2xl"
-        style={{
-          backgroundImage: "url('/img/Desktop - 11.png')",
-        }}
+        className="w-full md:w-[950px] md:h-[600px] font-poppins md:rounded-3xl md:bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative md:shadow-2xl md:bg-[url('/img/Desktop%20-%2011.png')]"
         onClick={(e) => e.stopPropagation()} // prevent close when clicking inside
       >
         {/* Logo Section */}
-        <div className="mb-6 z-10">
+        <div className="mb-6 z-10 hidden md:block">
           <img
             src="/img/logo.png"
             alt="Vedant Holiday Tour Logo"

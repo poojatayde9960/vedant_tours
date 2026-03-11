@@ -92,7 +92,7 @@ const TourPackages = () => {
   return (
     <div className="font-poppins ">
       {/* --- FILTER & LISTING SECTION --- */}
-      <section className=" mx-auto px-6 py-16 lg:pr-16 lg:pl-16 lg:py-20">
+      <section className=" mx-auto px-6  py-16 lg:pr-16 lg:pl-16 lg:py-20">
         {/* Filters Header */}
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end gap-10 mb-12 text-center lg:text-left">
           <div className="space-y-4 w-full lg:w-auto">
@@ -191,7 +191,8 @@ const TourPackages = () => {
             {/* Location */}
             <div className="flex items-center gap-2 px-4 py-2 w-full">
               <MapPin size={18} className="text-blue-600" />
-              <select className="outline-none w-full text-[#0644A0]">
+
+              <select className="outline-none w-full bg-transparent appearance-none text-[#0644A0]">
                 <option>Location</option>
               </select>
             </div>
@@ -227,7 +228,8 @@ const TourPackages = () => {
             {/* Duration */}
             <div className="flex items-center gap-2 px-4 py-2 w-full">
               <Users size={18} className="text-blue-600" />
-              <select className="outline-none w-full text-[#0644A0]">
+
+              <select className="outline-none w-full bg-transparent appearance-none text-[#0644A0]">
                 <option>Duration</option>
               </select>
             </div>
@@ -373,7 +375,7 @@ const TourPackages = () => {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 mb-24 lg:mb-40">
+      <section className="px-4 sm:px-6 mb-0 lg:mb-40">
         {/* ================= MOBILE VERSION ================= */}
         <div
           className="relative lg:hidden h-[440px] 

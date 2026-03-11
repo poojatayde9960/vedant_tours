@@ -33,17 +33,21 @@ const DealsHeader = () => {
       {/* Content */}
       <div className="w-full mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-xl md:-mt-10 -mt-9 lg:-mt-0 sm:text-3xl lg:text-[40px] font-goodly font-medium text-gray-800">
-          Unmissable <span className="text-orange-500">Deals</span>, Limited
-          Time <span className="text-blue-600">Only</span>
+        <h2 className="text-xl -mt-9 md:-mt-10 sm:text-3xl lg:text-[40px] font-goodly font-medium text-gray-800">
+          Unmissable <span className="text-orange-500">Deals</span>, Limited{" "}
+          <span className="block md:inline text-blue-600">Time Only</span>
         </h2>
 
         {/* Subtitle */}
-        <p className="text-gray-500 md:mt-8 font-medium text-sm sm:text-[17px] max-w-2xl mx-auto text-poppins">
+        {/* <p className="text-gray-500 md:mt-8 font-medium text-sm sm:text-[17px] max-w-2xl mx-auto text-poppins">
           Grab exclusive discounts on top destinations, honeymoon packages, and
           <br /> group tours. Book now and travel more while spending less.
+        </p> */}
+        <p className="text-gray-500 md:mt-8 font-medium text-sm sm:text-[17px] max-w-2xl mx-auto font-poppins">
+          Grab exclusive discounts on top destinations, honeymoon packages, and
+          <br className="hidden md:block" />
+          group tours. Book now and travel more while spending less.
         </p>
-
         {/* Filter Buttons Carousel */}
         <div className="flex overflow-x-auto md:flex-wrap md:justify-center gap-2 md:gap-3 mt-6 md:mt-8 font-poppins no-scrollbar px-2 md:px-4 scroll-smooth">
           {filters.map((item) => (
