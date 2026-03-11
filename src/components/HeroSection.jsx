@@ -69,7 +69,7 @@ const HeroSection = () => {
             <div className="bg-white rounded-xl md:rounded-full flex flex-col md:flex-row z-40 items-center md:gap-6 w-full p-1 md:p-2">
 
               {/* Location */}
-              <div className="flex items-center gap-2 px-3 py-3 md:px-4 md:py-2 w-full">
+              <div className="flex items-center gap-2 px-3 py-5 md:px-4 md:py-2 w-full">
                 <MapPin size={16} className="text-blue-600" />
                 <select className="outline-none w-full text-[#0644A0] text-sm md:text-base">
                   <option className="font-poppins font-medium">Location</option>
@@ -80,7 +80,7 @@ const HeroSection = () => {
 
               {/* Date */}
               <div
-                className="flex items-center gap-2 px-3 py-3 md:px-4 md:py-2 w-full relative cursor-pointer"
+                className="flex items-center gap-2 px-3 py-5 md:px-4 md:py-2 w-full relative cursor-pointer"
                 onClick={() => hiddenDateRef.current?.showPicker()}
               >
                 <Calendar size={16} className="text-[#0644A0]" />
@@ -104,7 +104,7 @@ const HeroSection = () => {
               <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
 
               {/* Travelers */}
-              <div className="flex items-center gap-2 px-3 py-3 md:px-4 md:py-2 w-full">
+              <div className="flex items-center gap-2 px-3 py-5 md:px-4 md:py-2 w-full">
                 <Users size={16} className="text-blue-600" />
                 <select className="outline-none w-full text-[#0644A0] text-sm md:text-base">
                   <option className="font-poppins font-medium">Travelers</option>
