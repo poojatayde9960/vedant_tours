@@ -15,7 +15,11 @@ const YourJourney = () => {
 
                     <img
                         src="/img/suitcase-2.png"
-                        className="hidden lg:block absolute md:h-52 right-0 -top-40 md:right-[-750px] z-20"
+                        className="hidden lg:block absolute
+  h-44 xl:h-48 2xl:h-52
+  right-[-10%] xl:right-[-95%] 2xl:right-[-104%]
+  -top-40
+  z-20"
                     />
                     {/* ✅ Counter moved heare */}
                     <div className="flex items-center gap-4 pt-6 md:ml-24">
