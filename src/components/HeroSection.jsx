@@ -76,7 +76,7 @@ const HeroSection = () => {
                 </select>
               </div>
 
-              <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
+              <div className="hidden lg:block h-6 w-px "></div>
 
               {/* Date */}
               <div
@@ -101,7 +101,7 @@ const HeroSection = () => {
                 />
               </div>
 
-              <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
+              <div className="hidden lg:block h-6 w-px "></div>
 
               {/* Travelers */}
               <div className="flex items-center gap-2 px-3 py-5 md:px-4 md:py-2 w-full">
