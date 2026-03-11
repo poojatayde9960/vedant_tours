@@ -47,24 +47,24 @@ const Footer = () => {
           </div>
 
           {/* Right */}
-          <div className="grid grid-cols-2 font-poppins sm:grid-cols-3 gap-6 text-sm lg:w-1/2 text-left w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 font-poppins text-[15px] sm:text-base lg:w-1/2 text-left w-full">
 
-            <div>
+            <div className="text-left">
               <h3 className="font-semibold mb-3">Quick Links</h3>
-              <ul className="space-y-2 text-white/90">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Why Choose Us</a></li>
-                <li><a href="#book">Book</a></li>
+              <ul className="space-y-2 text-white/90 text-left">
+                <li className="text-left"><a href="#home">Home</a></li>
+                <li className="text-left"><a href="#about">About Us</a></li>
+                <li className="text-left"><a href="#services">Why Choose Us</a></li>
+                <li className="text-left"><a href="#book">Book</a></li>
               </ul>
             </div>
 
-            <div>
+            <div className="text-left">
               <h3 className="font-semibold mb-3">Contact</h3>
-              <ul className="space-y-2 text-white/90">
-                <li>+91 8585 666 322</li>
-                <li>vedanttour@gmail.com</li>
-                <li>
+              <ul className="space-y-2 text-white/90 text-left">
+                <li className="text-left">+91 8585 666 322</li>
+                <li className="text-left break-all">vedanttour@gmail.com</li>
+                <li className="text-left">
                   golden city center, chhatrapati
                   <br />
                   sambhajinagar 431001
@@ -72,12 +72,12 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
+            <div className="text-left">
               <h3 className="font-semibold mb-3">Social Media</h3>
-              <ul className="space-y-2 text-white/90">
-                <li>Whatsapp</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
+              <ul className="space-y-2 text-white/90 text-left">
+                <li className="text-left">Whatsapp</li>
+                <li className="text-left">Facebook</li>
+                <li className="text-left">Instagram</li>
               </ul>
             </div>
 

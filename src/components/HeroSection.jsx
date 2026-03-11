@@ -45,17 +45,17 @@ const HeroSection = () => {
             support every step of the way.
           </p>
 
-          <div className="mt-5 flex flex-col md:flex-row text-[13px] md:text-[17px] justify-center gap-3 md:gap-4">
+          <div className="mt-5 flex flex-col md:flex-row  text-[13px] md:text-[17px] justify-center items-center gap-3 md:gap-4">
 
-            <button
-              className="bg-gradient-to-l from-[#F76200] to-[#FFB724] ml-12 text-white w-[60%] md:w-auto md:px-6 md:py-3 py-2 rounded-full transition font-poppins"
+            <buttonS
+              className="bg-gradient-to-l from-[#F76200] to-[#FFB724]  text-white w-[60%] md:w-auto md:px-6 md:py-3 py-2 rounded-full transition font-poppins"
               onClick={() => navigate("/tour-packages")}
             >
               Explore Packages
-            </button>
+            </buttonS>
 
             <button
-              className="border border-white text-white ml-12 bg-gradient-to-l from-[#00357A] to-[#0061E0] w-[60%] md:w-auto md:px-10 md:py-3 py-2 rounded-full transition font-poppins"
+              className="border border-white text-white  bg-gradient-to-l from-[#00357A] to-[#0061E0] w-[60%] md:w-auto md:px-10 md:py-3 py-2 rounded-full transition font-poppins"
             >
               Plan My Trip
             </button>

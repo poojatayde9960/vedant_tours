@@ -155,17 +155,17 @@ const TourPackages = () => {
           </div>
 
           {/* Category Filter Pills */}
-          <div className="flex flex-wrap items-center justify-center font-['Poppins'] lg:justify-end gap-6 p-2 w-full lg:w-auto">
+          <div className="flex flex-nowrap items-center justify-center font-['Poppins'] lg:justify-end gap-4 p-2 w-full lg:w-auto overflow-x-auto">
             {["Popular", "Luxurious", "Adventures"].map((cat, i) => (
               <button
                 key={i}
                 onClick={() => setActiveTab(cat)}
-                className="relative font-medium text-[17px] transition-all pb-2"
+                className="relative font-medium text-[15px] font-poppins md:text-[17px] transition-all pb-2 whitespace-nowrap"
               >
                 <span
                   className={`${activeTab === cat
                     ? "text-[#0061E0]"
-                    : "text-gray-400 hover:text-gray-600"
+                    : "text-gray-400 font-poppins hover:text-gray-600"
                     } transition-colors`}
                 >
                   {cat}
@@ -173,7 +173,7 @@ const TourPackages = () => {
 
                 {/* Orange Underline */}
                 {activeTab === cat && (
-                  <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[#F76200] rounded-full transition-all"></span>
+                  <span className="absolute left-0 font-poppins -bottom-1 w-full h-[3px] bg-[#F76200] rounded-full transition-all"></span>
                 )}
               </button>
             ))}
@@ -328,11 +328,10 @@ const TourPackages = () => {
                 {/* Buttons */}
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div className="flex flex-1 gap-2 sm:gap-4">
-                    <button className="flex-1 sm:flex-none font-['Poppins'] bg-[#FFB724] text-white px-6 py-3 rounded-full text-[16px] font-semibold hover:shadow-xl hover:translate-y-[-2px] transition-all">
+                    <button className="hidden sm:block flex-1 sm:flex-none font-['Poppins'] bg-[#FFB724] text-white px-6 py-3 rounded-full text-[16px] font-semibold hover:shadow-xl hover:translate-y-[-2px] transition-all">
                       View Details
                     </button>
-
-                    <button className="flex-1 sm:flex-none bg-[#0047B3] text-white px-6 py-3 rounded-full font-['Poppins'] text-[16px] font-medium hover:shadow-xl hover:translate-y-[-2px] transition-all">
+                    <button className="flex-1 sm:flex-none bg-[#0047B3] text-white px-4 py-2 md:px-6 md:py-3 rounded-full font-['Poppins'] text-[13px] md:text-[16px] font-medium whitespace-nowrap hover:shadow-xl hover:translate-y-[-2px] transition-all">
                       Enquire Now
                     </button>
                   </div>

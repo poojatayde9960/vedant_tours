@@ -38,7 +38,7 @@ export default function TravelGallery() {
   }
 
   return (
-    <section className="py-20 overflow-hidden w-full">
+    <section className="py-20 overflow-hidden w-full hidden md:block">
       <Swiper
         modules={[Autoplay]}
         slidesPerView={1}

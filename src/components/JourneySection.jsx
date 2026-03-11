@@ -35,19 +35,7 @@ export default function JourneySection() {
 
         {/* Timeline Section */}
         <div className="mt-16 relative">
-          {/* Curved SVG Path */}
-          {/* <svg
-            className="absolute top-12 left-0 w-full h-40 hidden lg:block"
-            viewBox="0 0 1200 200"
-            fill="none"
-          >
-            <path
-              d="M0 100 C 200 200, 400 0, 600 100 S 1000 200, 1200 100"
-              stroke="#f59e0b"
-              strokeWidth="3"
-              fill="transparent"
-            />
-          </svg> */}
+
 
           {/* Steps */}
           <div className="relative font-poppins h-[500px] mt-10 md:mt-0">
@@ -82,16 +70,22 @@ export default function JourneySection() {
 /* Step Component */
 function Step({ number, title, description, position }) {
   return (
-    <div className={`absolute ${position} flex items-start md:p-0 md:mt-0 mt-20 md:gap-4`}>
+    <div className={`absolute ${position} flex items-start mt-16 md:mt-0 gap-2 md:gap-4`}>
+
       {/* Number */}
-      <span className="absolute md:-left-12 md:mt-12 text-[550%]  font-medium text-blue-100 font-poppins">
+      <span className="absolute -left-2 md:-left-12 text-[60px] md:text-[120px] lg:text-[150px] font-medium text-blue-100 font-poppins">
         {number}
       </span>
 
       {/* Text */}
-      <div className="md:ml-6 md:mt-8 ml-14">
-        <h3 className="text-[20px] font-medium text-gray-800 font-poppins">{title}</h3>
-        <p className="mt-2 text-[#00000094] text-[17px] font-normal max-w-xs font-poppins">{description}</p>
+      <div className="ml-10 md:ml-6 mt-6 md:mt-8">
+        <h3 className="text-[16px] md:text-[20px] font-medium text-gray-800 font-poppins">
+          {title}
+        </h3>
+
+        <p className="mt-1 text-[13px] md:text-[17px] text-[#00000094] font-normal max-w-[200px] md:max-w-xs font-poppins">
+          {description}
+        </p>
       </div>
     </div>
   );

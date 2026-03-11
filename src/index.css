@@ -52,3 +52,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+  .dealsSwiper .swiper-pagination {
+    display: none;
+  }
+}
