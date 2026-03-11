@@ -48,14 +48,14 @@ const HeroSection = () => {
           <div className="mt-5 flex flex-col md:flex-row  text-[13px] md:text-[17px] justify-center items-center gap-3 md:gap-4">
 
             <buttonS
-              className="bg-gradient-to-l from-[#F76200] to-[#FFB724]  text-white w-[60%] md:w-auto md:px-6 md:py-3 py-2 rounded-full transition font-poppins"
+              className="bg-gradient-to-l from-[#F76200] to-[#FFB724]  text-white w-[60%] md:w-auto md:px-6 md:py-3 py-3 rounded-full transition font-poppins"
               onClick={() => navigate("/tour-packages")}
             >
               Explore Packages
             </buttonS>
 
             <button
-              className="border border-white text-white  bg-gradient-to-l from-[#00357A] to-[#0061E0] w-[60%] md:w-auto md:px-10 md:py-3 py-2 rounded-full transition font-poppins"
+              className="border border-white text-white  bg-gradient-to-l from-[#00357A] to-[#0061E0] w-[60%] md:w-auto md:px-10 md:py-3 py-3 rounded-full transition font-poppins"
             >
               Plan My Trip
             </button>
@@ -69,7 +69,7 @@ const HeroSection = () => {
             <div className="bg-white rounded-xl md:rounded-full flex flex-col md:flex-row z-40 items-center md:gap-6 w-full p-1 md:p-2">
 
               {/* Location */}
-              <div className="flex items-center gap-2 px-3 py-2 md:px-4 md:py-2 w-full">
+              <div className="flex items-center gap-2 px-3 py-3 md:px-4 md:py-2 w-full">
                 <MapPin size={16} className="text-blue-600" />
                 <select className="outline-none w-full text-[#0644A0] text-sm md:text-base">
                   <option className="font-poppins font-medium">Location</option>
@@ -80,7 +80,7 @@ const HeroSection = () => {
 
               {/* Date */}
               <div
-                className="flex items-center gap-2 px-3 py-2 md:px-4 md:py-2 w-full relative cursor-pointer"
+                className="flex items-center gap-2 px-3 py-3 md:px-4 md:py-2 w-full relative cursor-pointer"
                 onClick={() => hiddenDateRef.current?.showPicker()}
               >
                 <Calendar size={16} className="text-[#0644A0]" />
@@ -104,7 +104,7 @@ const HeroSection = () => {
               <div className="hidden lg:block h-6 w-px bg-gray-200"></div>
 
               {/* Travelers */}
-              <div className="flex items-center gap-2 px-3 py-2 md:px-4 md:py-2 w-full">
+              <div className="flex items-center gap-2 px-3 py-3 md:px-4 md:py-2 w-full">
                 <Users size={16} className="text-blue-600" />
                 <select className="outline-none w-full text-[#0644A0] text-sm md:text-base">
                   <option className="font-poppins font-medium">Travelers</option>
@@ -113,7 +113,7 @@ const HeroSection = () => {
             </div>
 
             {/* Search Button */}
-            <button className="bg-gradient-to-l from-[#FFB724] to-[#F76200] text-white w-full md:w-auto px-5 md:px-14 py-2 md:py-2 rounded-full flex items-center justify-center gap-2 transition whitespace-nowrap md:-ml-12 z-10 text-sm md:text-base">
+            <button className="bg-gradient-to-l from-[#FFB724] to-[#F76200] text-white w-full md:w-auto px-5 md:px-14 py-3 md:py-2 rounded-full flex items-center justify-center gap-2 transition whitespace-nowrap md:-ml-12 z-10 text-sm md:text-base">
               <Search size={16} className="flex-shrink-0" />
               <span className="text-center font-poppins font-medium">Search Tour</span>
             </button>

@@ -8,6 +8,7 @@ import TourPackage from "../components/TourPackage";
 import TestimonialsSection from "../components/TestimonialsSection";
 import TravelGallery from "../components/TravalGallery";
 import TravelBanner from "../components/TravelBanner";
+import YourJourney from "../components/YourJourney";
 
 const LandingPage = () => {
   return (
@@ -33,7 +34,7 @@ const LandingPage = () => {
       </section>
 
       <section id="packages">
-        <TourPackage />
+        <YourJourney />
       </section>
       {/* <section id="packages">
         <TourPackage />
